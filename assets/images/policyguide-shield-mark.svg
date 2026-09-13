@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" role="img" aria-label="PolicyGuide US Shield Crest">
+  <defs>
+    <linearGradient id="shieldGradSolo" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00C48C"/>
+      <stop offset="50%" stop-color="#00A86B"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <linearGradient id="shieldStrokeSolo" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6EE7B7"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+    <filter id="subtleGlowSolo" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#00A86B" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <path d="M24 3 C35 3 43 7 45 16 C45 30 32 41 24 45 C16 41 3 30 3 16 C5 7 13 3 24 3 Z" 
+        fill="url(#shieldGradSolo)" 
+        stroke="url(#shieldStrokeSolo)" 
+        stroke-width="2" 
+        filter="url(#subtleGlowSolo)"/>
+  <path d="M24 7 C32 7 38 10 40 17 C40 27 30 36 24 39 C18 36 8 27 8 17 C10 10 16 7 24 7 Z" 
+        fill="#0B132B" 
+        fill-opacity="0.45"/>
+  <polygon points="24,10 25.5,14.5 30.2,14.5 26.4,17.2 27.9,21.7 24,19 20.1,21.7 21.6,17.2 17.8,14.5 22.5,14.5" 
+           fill="#FCD34D" />
+  <path d="M16 25 L21 30 L32 19" 
+        stroke="#FFFFFF" 
+        stroke-width="3" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+</svg>

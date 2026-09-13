@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insurance Savings & Coverage Calculators (2026) | PolicyGuide US</title>
+  <meta name="description" content="Calculate your true car and home insurance coverage needs, simulate deductible savings, estimate vehicle rates by driver age, and audit your state compliance with free tools.">
+  <link rel="canonical" href="https://policyguideusa.com/calculators.html">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://policyguideusa.com/calculators.html">
+  <meta property="og:title" content="Insurance Coverage & Savings Calculators (2026) | PolicyGuide USA">
+  <meta property="og:description" content="Interactive actuarial calculators: liability limits, umbrella needs, deductible break-even, and vehicle & age premium estimators.">
+  <meta property="og:image" content="https://policyguideusa.com/assets/images/policyguide-logo.svg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Insurance Coverage & Savings Calculators (2026) | PolicyGuide USA">
+  <meta name="twitter:description" content="Calculate your coverage gap, optimal deductibles, umbrella policy needs, and vehicle premium benchmarks.">
+
+  <!-- Robots -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- JSON-LD BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://policyguideusa.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Insurance Calculators",
+        "item": "https://policyguideusa.com/calculators.html"
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How does vehicle type impact my car insurance rate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vehicles with higher safety ratings (like compact SUVs) typically cost less to insure for bodily injury liability, while electric vehicles (EVs) and luxury cars carry 20-35% higher collision premiums due to expensive replacement parts and battery pack containment."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why are drivers under 25 charged significantly higher insurance premiums?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Drivers aged 16 to 24 have mathematically higher crash and claim frequencies per mile driven. Adding good student discounts (3.0+ GPA) or completing a defensive driving course can reduce youthful driver rates by 15-25%."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    .calc-hub-section {
+      background: var(--color-surface-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      box-shadow: var(--shadow-md);
+      margin-bottom: 3.5rem;
+    }
+    .calc-explanation {
+      background: var(--color-bg);
+      border-left: 4px solid var(--color-primary);
+      padding: 1.25rem;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Pre-Header Top Trust & Compliance Bar -->
+  <div class="top-trust-bar">
+    <div class="container top-trust-inner">
+      <div class="trust-bar-left">
+        <svg class="trust-flag-svg" viewBox="0 0 16 12" width="16" height="12" style="border-radius: 2px; overflow: hidden; display: inline-block; vertical-align: middle; flex-shrink: 0;" aria-label="US Flag">
+          <rect width="16" height="12" fill="#B22234"/>
+          <path d="M0,1.85H16M0,3.7H16M0,5.54H16M0,7.38H16M0,9.23H16M0,11.08H16" stroke="#FFF" stroke-width="0.92"/>
+          <rect width="7" height="6.5" fill="#1E3A8A"/>
+          <circle cx="3.5" cy="3.25" r="1.5" fill="#FFF"/>
+        </svg>
+        <span class="trust-text"><strong>Official US Insurance Registry</strong> <span class="trust-bar-divider">•</span> Independent 50-State Statutory Rules <span class="trust-bar-divider">•</span> NAIC & AM Best Verified Data</span>
+      </div>
+      <div class="trust-bar-right">
+        <span class="trust-pill"><span class="trust-dot"></span> 2026 Live Benchmarks</span>
+        <span class="trust-pill">🔒 256-Bit SSL Encrypted</span>
+        <span class="trust-pill">⭐ 4.9/5 Consumer Trust Score</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" id="header-logo" aria-label="PolicyGuide US - America's Independent Insurance Authority">
+        <div class="logo-crest">
+          <svg class="logo-crest-svg" viewBox="0 0 48 48" width="44" height="44" fill="none" aria-hidden="true">
+            <defs>
+              <linearGradient id="crestGrad" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#00C48C"/>
+                <stop offset="50%" stop-color="#00A86B"/>
+                <stop offset="100%" stop-color="#0284C7"/>
+              </linearGradient>
+              <linearGradient id="crestStroke" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#6EE7B7"/>
+                <stop offset="100%" stop-color="#38BDF8"/>
+              </linearGradient>
+            </defs>
+            <path d="M24 3 C35 3 43 7 45 16 C45 30 32 41 24 45 C16 41 3 30 3 16 C5 7 13 3 24 3 Z" fill="url(#crestGrad)" stroke="url(#crestStroke)" stroke-width="2"/>
+            <path d="M24 7 C32 7 38 10 40 17 C40 27 30 36 24 39 C18 36 8 27 8 17 C10 10 16 7 24 7 Z" fill="#0B132B" fill-opacity="0.45"/>
+            <polygon points="24,10 25.5,14.5 30.2,14.5 26.4,17.2 27.9,21.7 24,19 20.1,21.7 21.6,17.2 17.8,14.5 22.5,14.5" fill="#FCD34D"/>
+            <path d="M16 25 L21 30 L32 19" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="logo-text-group">
+          <div class="logo-title-row">
+            <span class="logo-brand-policy">POLICY</span><span class="logo-brand-guide">GUIDE</span>
+            <span class="logo-badge-us">US</span>
+          </div>
+          <div class="logo-tagline">AMERICA'S INDEPENDENT INSURANCE AUTHORITY</div>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="state-guide.html" class="nav-link">50-State Guides</a></li>
+          <li><a href="city-guide.html" class="nav-link">Metro Guides</a></li>
+          <li><a href="carrier-comparison.html" class="nav-link">Carrier Matchups</a></li>
+          <li><a href="calculators.html" class="nav-link active">Calculators</a></li>
+          <li><a href="blog.html" class="nav-link">Articles</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle-btn" id="theme-toggle" title="Toggle Theme">
+          <span id="theme-icon">☀️</span>
+        </button>
+        <button class="btn btn-primary btn-sm open-quote-modal">Compare Quotes</button>
+        <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" style="padding: 3rem 0 2rem;">
+    <div class="container">
+      <span class="badge badge-primary">Free Financial Utilities</span>
+      <h1 style="margin-top: 0.75rem;">Interactive Insurance Savings Calculators</h1>
+      <p>
+        Eliminate guesswork from your insurance policy. Calculate your exact asset exposure, 
+        see if raising your deductible makes financial sense, and find unclaimed discounts.
+      </p>
+    </div>
+  </section>
+
+  <div class="container">
+
+    <!-- AdSense Leaderboard Slot -->
+    <div class="ad-slot-leaderboard" role="complementary" aria-label="Advertisement">
+      <span class="ad-label">ADVERTISEMENT</span>
+      <div class="ad-placeholder-text">Google AdSense 728x90 Banner Slot</div>
+    </div>
+
+    <!-- Calculator 1: Coverage Limit & Umbrella Advisor -->
+    <div class="calc-hub-section" id="coverage-advisor">
+      <span class="badge badge-primary">Tool #1</span>
+      <h2 style="margin: 0.5rem 0 1rem;">"Am I Underinsured?" Coverage Limit & Umbrella Advisor</h2>
+      <p>Most drivers carry state minimum limits, unaware that an at-fault crash can lead to wage garnishment or home liens. Tell us your profile to find your safe coverage threshold.</p>
+
+      <div class="calc-form-grid">
+        <div class="form-group">
+          <label for="cov-home-status">Home Ownership Status:</label>
+          <select id="cov-home-status" class="form-control">
+            <option value="rent">I Rent (Apartment / House)</option>
+            <option value="own" selected>I Own My Primary Residence</option>
+            <option value="multi">I Own Multiple Properties</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="cov-net-worth">Estimated Total Net Worth (Home Equity, Savings, Investments):</label>
+          <select id="cov-net-worth" class="form-control">
+            <option value="40000">Under $50,000</option>
+            <option value="150000" selected>$50,000 to $250,000</option>
+            <option value="450000">$250,000 to $750,000</option>
+            <option value="1200000">$750,000 to $2 Million</option>
+            <option value="2500000">Over $2 Million</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="cov-vehicles">Total Household Vehicles:</label>
+          <select id="cov-vehicles" class="form-control">
+            <option value="1">1 Vehicle</option>
+            <option value="2" selected>2 Vehicles</option>
+            <option value="3">3+ Vehicles</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group" style="margin-bottom: 1.5rem;">
+        <label class="checkbox-item" style="max-width: 450px;">
+          <input type="checkbox" id="cov-risk">
+          <span>Household includes teenage or youthful drivers (under 25)</span>
+        </label>
+      </div>
+
+      <button class="btn btn-primary" id="calc-coverage-btn">Calculate Safe Coverage Recommendation &rarr;</button>
+
+      <div id="cov-result-box" class="hidden"></div>
+
+      <div class="calc-explanation">
+        <strong>💡 Why State Minimum Limits Are Dangerous:</strong>
+        <p style="margin-top: 0.5rem; margin-bottom: 0;">In California, state minimum property damage is only $5,000. In Florida and New York, it is only $10,000. If you accidentally rear-end an electric vehicle or cause a multi-vehicle crash, repair costs routinely reach $40,000+. Your insurance carrier only pays up to your limit; the other party can sue you directly for the remaining balance.</p>
+      </div>
+    </div>
+
+    <!-- Calculator 2: Deductible Savings Break-Even Simulator -->
+    <div class="calc-hub-section" id="deductible-calc">
+      <span class="badge badge-primary">Tool #2</span>
+      <h2 style="margin: 0.5rem 0 1rem;">Deductible Savings Break-Even Simulator</h2>
+      <p>Raising your collision and comprehensive deductible lowers your monthly bill. Use this calculator to see how many months you must drive claim-free for the premium savings to outweigh the out-of-pocket risk.</p>
+
+      <div class="calc-form-grid">
+        <div class="form-group">
+          <label for="ded-curr">Current Deductible:</label>
+          <select id="ded-curr" class="form-control">
+            <option value="250">$250 Deductible</option>
+            <option value="500" selected>$500 Deductible</option>
+            <option value="1000">$1,000 Deductible</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="ded-target">Proposed Target Deductible:</label>
+          <select id="ded-target" class="form-control">
+            <option value="500">$500 Deductible</option>
+            <option value="1000" selected>$1,000 Deductible</option>
+            <option value="1500">$1,500 Deductible</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="ded-premium">Estimated Annual Comprehensive & Collision Cost ($):</label>
+          <input type="number" id="ded-premium" class="form-control" value="1600" step="50">
+        </div>
+      </div>
+
+      <button class="btn btn-primary" id="calc-deductible-btn">Calculate Break-Even Point &rarr;</button>
+
+      <div id="ded-result-box" class="hidden"></div>
+
+      <div class="calc-explanation">
+        <strong>💡 The Golden Rule of Deductibles:</strong>
+        <p style="margin-top: 0.5rem; margin-bottom: 0;">Only raise your deductible to $1,000 or $1,500 if you have that amount set aside in an emergency fund. If an accident occurs, you must pay your deductible before the insurance company pays a single dollar toward repairs.</p>
+      </div>
+    </div>
+
+    <!-- Calculator 3: Discount Matcher Quiz -->
+    <div class="calc-hub-section" id="discount-finder">
+      <span class="badge badge-primary">Tool #3</span>
+      <h2 style="margin: 0.5rem 0 1rem;">The 2-Minute Discount Matcher Quiz</h2>
+      <p>Carriers don't always apply every discount automatically. Select all categories that match your lifestyle to generate a personalized discount checklist.</p>
+
+      <div class="checkbox-group">
+        <label class="checkbox-item">
+          <input type="checkbox" id="disc-bundle" checked>
+          <span>Insure both home/renters and vehicle with same carrier</span>
+        </label>
+        <label class="checkbox-item">
+          <input type="checkbox" id="disc-multicar" checked>
+          <span>2 or more vehicles on the same auto policy</span>
+        </label>
+        <label class="checkbox-item">
+          <input type="checkbox" id="disc-paperless" checked>
+          <span>Signed up for paperless e-delivery & auto-pay</span>
+        </label>
+        <label class="checkbox-item">
+          <input type="checkbox" id="disc-telematics" checked>
+          <span>Willing to test a safe-driver app (Snapshot / Drive Safe & Save)</span>
+        </label>
+        <label class="checkbox-item">
+          <input type="checkbox" id="disc-student">
+          <span>Student on policy with 3.0+ GPA or B average</span>
+        </label>
+        <label class="checkbox-item">
+          <input type="checkbox" id="disc-defense">
+          <span>Completed a recognized defensive driving course</span>
+        </label>
+        <label class="checkbox-item">
+          <input type="checkbox" id="disc-antitheft">
+          <span>Vehicle equipped with active GPS tracker or alarm</span>
+        </label>
+        <label class="checkbox-item">
+          <input type="checkbox" id="disc-security">
+          <span>Home has monitored fire alarm or automatic water shut-off</span>
+        </label>
+      </div>
+
+      <button class="btn btn-primary" id="calc-discount-btn">Uncover My Discounts &rarr;</button>
+
+      <div id="disc-result-box" class="hidden"></div>
+    </div>
+
+    <!-- Calculator 4: Vehicle Class & Driver Age Rate Estimator -->
+    <div class="calc-hub-section" id="rate-estimator">
+      <span class="badge badge-primary">Tool #4</span>
+      <h2 style="margin: 0.5rem 0 1rem;">Vehicle Type & Driver Age Rate Estimator (2026)</h2>
+      <p>Estimate customized annual and monthly premiums across top US carriers based on your vehicle class, driver age bracket, annual mileage, and driving record history.</p>
+
+      <div class="calc-form-grid">
+        <div class="form-group">
+          <label for="est-vehicle">Vehicle Class:</label>
+          <select id="est-vehicle" class="form-control">
+            <option value="sedan" selected>Standard Sedan / Hatchback (Civic, Camry, Accord)</option>
+            <option value="suv">Compact / Midsize SUV (RAV4, CR-V, Rogue)</option>
+            <option value="truck">Full-Size Pickup Truck (F-150, Silverado, Ram)</option>
+            <option value="ev">Electric Vehicle / Tesla (Model 3, Model Y, Ioniq)</option>
+            <option value="luxury">Luxury / Performance Sports (BMW, Mercedes, Audi)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="est-age">Driver Age Tier:</label>
+          <select id="est-age" class="form-control">
+            <option value="young">16 – 24 (Young / First-Time Driver)</option>
+            <option value="prime" selected>25 – 49 (Prime Adult Driver)</option>
+            <option value="mature">50 – 64 (Experienced Mature Driver)</option>
+            <option value="senior">65+ (Senior Driver)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="est-mileage">Estimated Annual Mileage:</label>
+          <select id="est-mileage" class="form-control">
+            <option value="low">Under 7,500 miles/yr (Low Commuter)</option>
+            <option value="average" selected>12,000 miles/yr (US Average)</option>
+            <option value="high">15,000+ miles/yr (High Mileage / Road Warrior)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="est-record">Driving Record History:</label>
+          <select id="est-record" class="form-control">
+            <option value="clean" selected>Clean Record (No tickets or claims in 3 yrs)</option>
+            <option value="ticket">1 Speeding Violation (+22% Avg)</option>
+            <option value="accident">1 At-Fault Collision (+44% Avg)</option>
+            <option value="lapse">Prior Coverage Lapse (+28% Avg)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="est-coverage">Desired Coverage Tier:</label>
+          <select id="est-coverage" class="form-control">
+            <option value="minimum">State Statutory Minimum (Liability Only)</option>
+            <option value="standard" selected>Standard Coverage (50/100/50 + $1k Deductible)</option>
+            <option value="full">Full Coverage Shield (100/300/100 + $500 Deductible + Roadside)</option>
+          </select>
+        </div>
+      </div>
+
+      <button class="btn btn-primary" id="calc-rate-estimator-btn">Estimate My Custom Rates &rarr;</button>
+
+      <div id="est-result-box" class="hidden" style="margin-top: 1.5rem;"></div>
+    </div>
+
+    <!-- Calculator 5: State Compliance & Annual Policy Audit Checklists -->
+    <div class="calc-hub-section" id="audit-checklists">
+      <!-- Hidden print header that only shows when printed -->
+      <div class="print-audit-header">
+        <h2>PolicyGuide US — Official Insurance Policy Audit & Compliance Report</h2>
+        <p style="margin: 0.25rem 0; font-size: 0.9rem;">Verified National P&C Regulatory Framework • Generated for Policyholder Record</p>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+        <div>
+          <span class="badge badge-primary">Tool #5</span>
+          <h2 style="margin: 0.5rem 0 0.25rem;">State Compliance & Annual Policy Audit Checklist</h2>
+          <p style="margin-bottom: 0;">Interactive regulatory readiness audits for Florida hurricane rules, California wildfire mandates, and national coverage reviews.</p>
+        </div>
+        <button class="btn btn-secondary btn-sm" id="print-audit-btn" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+          <span>🖨️</span> Print / Save Official Audit PDF
+        </button>
+      </div>
+
+      <!-- Checklist Tab Switcher -->
+      <div class="filter-bar" id="checklist-tabs" style="margin-bottom: 1.5rem;">
+        <button class="carrier-filter-btn active" data-audit="florida">🌴 Florida Hurricane & Roof Audit</button>
+        <button class="carrier-filter-btn" data-audit="california">🐻 California Wildfire & 30/60/15 Audit</button>
+        <button class="carrier-filter-btn" data-audit="national">🇺🇸 National Personal Policy Audit</button>
+      </div>
+
+      <!-- Progress Meter -->
+      <div style="background: var(--color-bg); padding: 0.85rem 1.25rem; border-radius: var(--radius-sm); border: 1px solid var(--color-border); margin-bottom: 1.5rem; display: flex; justify-content: space-between; align-items: center;">
+        <span style="font-weight: 700; font-size: 0.9rem;" id="audit-progress-label">Audit Progress: 0 / 6 Verified</span>
+        <span class="badge badge-success" id="audit-status-badge">Action Required</span>
+      </div>
+
+      <!-- Checklist Items Container -->
+      <div class="checkbox-group" id="audit-checklist-items">
+        <!-- Injected dynamically based on selected tab -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Quote Modal -->
+  <div class="modal-overlay hidden" id="quote-modal" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="close-modal-btn">✕</button>
+      <div id="modal-dynamic-content">
+        <h3 id="modal-title" style="margin-bottom: 0.5rem;">Get Your Free Rate Comparison</h3>
+        <p style="font-size: 0.9rem; margin-bottom: 1.5rem;">Compare rates from top US carriers.</p>
+        <form id="lead-quote-form">
+          <input type="hidden" id="modal-carrier-name" value="All Major Carriers">
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <label for="modal-zip">Your US ZIP Code:</label>
+            <input type="text" id="modal-zip" class="form-control" placeholder="e.g. 90210" required maxlength="5">
+          </div>
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <label for="modal-coverage-type">Coverage Type:</label>
+            <select id="modal-coverage-type" class="form-control">
+              <option value="Auto Insurance">Auto Insurance</option>
+              <option value="Home & Auto Bundle">Home + Auto Multi-Policy</option>
+              <option value="Homeowners Insurance">Homeowners Insurance</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Find Matching Rates &rarr;</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; 2026 PolicyGuide US. Interactive Consumer Tools.</div>
+        <div>Terms of Service | Privacy Policy</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/address-intelligence.js"></script>
+  <script src="js/calculators.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
