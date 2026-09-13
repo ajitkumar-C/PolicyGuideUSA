@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="canonical" href="https://policyguideusa.com/article.html">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <link rel="apple-touch-icon" href="assets/images/favicon.svg">
   <meta name="google-site-verification" content="8K1eK9v8vRXnL_ZOdPvflRd18u8ICmdG-o7E-CMSFTg">
@@ -285,7 +287,8 @@
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const urlParams = new URLSearchParams(window.location.search);
-      let postId = urlParams.get('id') || 'progressive-snapshot-vs-state-farm-drive-safe';
+      const hashId = window.location.hash ? window.location.hash.replace('#', '').trim() : null;
+      let postId = urlParams.get('id') || hashId || 'progressive-snapshot-vs-state-farm-drive-safe';
 
       const post = INSURANCE_BLOG_POSTS.find(p => p.id === postId) || INSURANCE_BLOG_POSTS[0];
 
@@ -356,7 +359,7 @@
       const relatedPosts = INSURANCE_BLOG_POSTS.filter(p => p.id !== post.id).slice(0, 5);
       relatedBox.innerHTML = relatedPosts.map(r => `
         <li style="margin-bottom: 0.85rem;">
-          <a href="article.html?id=${r.id}" style="color: var(--color-text-main); font-weight: 600; display: block; line-height: 1.35;">
+          <a href="article.html#${r.id}" style="color: var(--color-text-main); font-weight: 600; display: block; line-height: 1.35;">
             ${r.title}
           </a>
           <span class="text-dim" style="font-size: 0.75rem;">⏱ ${r.readTime} &bull; ${r.category}</span>

@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>50-State Insurance Guide | Minimum Coverage Laws & Average Rates by State (2026)</title>
-  <meta name="description" content="Explore auto and home insurance requirements for all 50 US states. Find minimum liability laws, no-fault vs at-fault rules, average premiums, and top rated insurers.">
+  <title>50-State Auto Insurance Minimums & Laws (2026)</title>
+  <meta name="description" content="Explore 2026 auto and home insurance laws across all 50 US states. Find statutory minimums, no-fault rules, and average rates.">
   <link rel="canonical" href="https://policyguideusa.com/state-guide.html">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <link rel="apple-touch-icon" href="assets/images/favicon.svg">
   <meta name="google-site-verification" content="8K1eK9v8vRXnL_ZOdPvflRd18u8ICmdG-o7E-CMSFTg">
@@ -13,14 +15,14 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://policyguideusa.com/state-guide.html">
-  <meta property="og:title" content="50-State Auto Insurance Minimums & Requirements Guide (2026)">
-  <meta property="og:description" content="Official statutory liability minimums, no-fault laws, and comparative fault regulations across all 50 states.">
+  <meta property="og:title" content="50-State Auto Insurance Minimums & Laws (2026)">
+  <meta property="og:description" content="Explore 2026 auto and home insurance laws across all 50 US states. Find statutory minimums, no-fault rules, and average rates.">
   <meta property="og:image" content="https://policyguideusa.com/assets/images/policyguide-logo.svg">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="50-State Auto Insurance Minimums & Requirements Guide (2026)">
-  <meta name="twitter:description" content="Official statutory liability minimums, no-fault laws, and comparative fault regulations across all 50 states.">
+  <meta name="twitter:title" content="50-State Auto Insurance Minimums & Laws (2026)">
+  <meta name="twitter:description" content="Explore 2026 auto and home insurance laws across all 50 US states. Find statutory minimums, no-fault rules, and average rates.">
 
   <!-- JSON-LD BreadcrumbList Schema -->
   <script type="application/ld+json">
@@ -327,9 +329,10 @@
       const searchInput = document.getElementById('state-search-input');
       const regionFilter = document.getElementById('region-filter');
 
-      // Check URL params (e.g. ?state=FL)
+      // Check URL params or hash anchor (e.g. #CA or ?state=FL)
       const urlParams = new URLSearchParams(window.location.search);
-      const preselectState = urlParams.get('state');
+      const hashState = window.location.hash ? window.location.hash.replace('#', '').trim().toUpperCase() : null;
+      let preselectState = urlParams.get('state') || (hashState && hashState.length === 2 ? hashState : null);
 
       function renderStates() {
         const query = searchInput.value.toLowerCase().trim();

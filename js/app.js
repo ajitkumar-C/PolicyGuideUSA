@@ -159,7 +159,7 @@ function renderStateSnapshot(state, zip) {
           <span class="badge badge-primary">${state.code} Coverage Hub</span>
           <h3 style="margin-top: 0.35rem;">${state.name} Rates & Requirements ${locationSubheader}</h3>
         </div>
-        <a href="state-guide.html?state=${state.code}" class="link-arrow" style="font-weight: 700;">Full ${state.name} Legal Guide &rarr;</a>
+        <a href="state-guide.html#${state.code}" class="link-arrow" style="font-weight: 700;">Full ${state.name} Legal Guide &rarr;</a>
       </div>
       <div class="snapshot-grid">
         <div class="stat-pill">
@@ -759,7 +759,7 @@ function initBlog() {
       }
 
       blogContainer.innerHTML = filtered.map(post => `
-        <div class="blog-card" onclick="window.location.href='article.html?id=${encodeURIComponent(post.id)}'">
+        <div class="blog-card" onclick="window.location.href='article.html#${encodeURIComponent(post.id)}'">
           <div>
             <div class="blog-meta-top">
               <span class="badge badge-primary">${post.category}</span>
@@ -770,7 +770,7 @@ function initBlog() {
           </div>
           <div class="blog-card-footer">
             <span>📅 ${post.publishDate}</span>
-            <a href="article.html?id=${encodeURIComponent(post.id)}" class="link-arrow" style="font-weight:700; color:var(--color-primary);">Read Full Guide &rarr;</a>
+            <a href="article.html#${encodeURIComponent(post.id)}" class="link-arrow" style="font-weight:700; color:var(--color-primary);">Read Full Guide &rarr;</a>
           </div>
         </div>
       `).join('');
@@ -794,7 +794,7 @@ function initBlog() {
   if (homeBlogContainer) {
     const featured = INSURANCE_BLOG_POSTS.slice(0, 6);
     homeBlogContainer.innerHTML = featured.map(post => `
-      <div class="blog-card" onclick="window.location.href='article.html?id=${encodeURIComponent(post.id)}'">
+      <div class="blog-card" onclick="window.location.href='article.html#${encodeURIComponent(post.id)}'">
         <div>
           <div class="blog-meta-top">
             <span class="badge badge-primary">${post.category}</span>
@@ -805,7 +805,7 @@ function initBlog() {
         </div>
         <div class="blog-card-footer">
           <span>📅 ${post.publishDate}</span>
-          <a href="article.html?id=${encodeURIComponent(post.id)}" class="link-arrow" style="font-weight:700; color:var(--color-primary);">Read Full Guide &rarr;</a>
+          <a href="article.html#${encodeURIComponent(post.id)}" class="link-arrow" style="font-weight:700; color:var(--color-primary);">Read Full Guide &rarr;</a>
         </div>
       </div>
     `).join('');

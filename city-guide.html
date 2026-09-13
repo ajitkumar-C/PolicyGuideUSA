@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>US Metro City Insurance Guides (2026) | Local Rates & Laws - PolicyGuide US</title>
-  <meta name="description" content="Compare 2026 car and home insurance rates for major US metros: Los Angeles, Miami, Houston, New York City, and Chicago. Uncover local statutory laws and carrier benchmarks.">
+  <title>US Metro Insurance Rates & City Guides (2026)</title>
+  <meta name="description" content="Compare 2026 auto & home insurance rates across top US metros: LA, Miami, Houston, NYC & Chicago. Local peril risks and cheapest carriers.">
   <link rel="canonical" href="https://policyguideusa.com/city-guide.html">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <link rel="apple-touch-icon" href="assets/images/favicon.svg">
   <meta name="google-site-verification" content="8K1eK9v8vRXnL_ZOdPvflRd18u8ICmdG-o7E-CMSFTg">
@@ -13,13 +15,13 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://policyguideusa.com/city-guide.html">
-  <meta property="og:title" content="Top Metro Insurance Guides (2026) | PolicyGuide USA">
-  <meta property="og:description" content="City-by-city auto & home insurance benchmarks, statutory requirements, climate risk factors, and cheapest local carriers.">
+  <meta property="og:title" content="US Metro Insurance Rates & City Guides (2026)">
+  <meta property="og:description" content="Compare 2026 auto & home insurance rates across top US metros: LA, Miami, Houston, NYC & Chicago. Local peril risks and cheapest carriers.">
   <meta property="og:image" content="https://policyguideusa.com/assets/images/policyguide-logo.svg">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Top Metro Insurance Guides (2026) | PolicyGuide USA">
+  <meta name="twitter:title" content="US Metro Insurance Rates & City Guides (2026)">
   <meta name="twitter:description" content="Compare auto & home insurance rates across top US metropolitan areas.">
 
   <!-- Robots -->
@@ -320,22 +322,22 @@
         <div class="footer-col">
           <h5>Metro City Guides</h5>
           <ul class="footer-links">
-            <li><a href="city-guide.html?city=los-angeles">Los Angeles, CA Guide</a></li>
-            <li><a href="city-guide.html?city=miami">Miami, FL Windstorm</a></li>
-            <li><a href="city-guide.html?city=houston">Houston, TX Hail & Flood</a></li>
-            <li><a href="city-guide.html?city=new-york">New York, NY No-Fault</a></li>
-            <li><a href="city-guide.html?city=chicago">Chicago, IL Auto Theft</a></li>
+            <li><a href="city-guide.html#los-angeles">Los Angeles, CA Guide</a></li>
+            <li><a href="city-guide.html#miami">Miami, FL Windstorm</a></li>
+            <li><a href="city-guide.html#houston">Houston, TX Hail & Flood</a></li>
+            <li><a href="city-guide.html#new-york">New York, NY No-Fault</a></li>
+            <li><a href="city-guide.html#chicago">Chicago, IL Auto Theft</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
           <h5>50-State Hub</h5>
           <ul class="footer-links">
-            <li><a href="state-guide.html?state=CA">California Auto & Wildfire</a></li>
-            <li><a href="state-guide.html?state=FL">Florida Roof & Home</a></li>
-            <li><a href="state-guide.html?state=TX">Texas Auto Minimums</a></li>
-            <li><a href="state-guide.html?state=NY">New York PIP & Co-Op</a></li>
-            <li><a href="state-guide.html?state=OH">Ohio Low-Cost Auto</a></li>
+            <li><a href="state-guide.html#CA">California Auto & Wildfire</a></li>
+            <li><a href="state-guide.html#FL">Florida Roof & Home</a></li>
+            <li><a href="state-guide.html#TX">Texas Auto Minimums</a></li>
+            <li><a href="state-guide.html#NY">New York PIP & Co-Op</a></li>
+            <li><a href="state-guide.html#OH">Ohio Low-Cost Auto</a></li>
           </ul>
         </div>
 
@@ -449,9 +451,10 @@
         history.replaceState(null, '', `city-guide.html?city=${city.id}`);
       }
 
-      // Check query param
+      // Check query param or hash anchor
       const urlParams = new URLSearchParams(window.location.search);
-      const initialCity = urlParams.get('city') || 'los-angeles';
+      const hashCity = window.location.hash ? window.location.hash.replace('#', '') : null;
+      const initialCity = urlParams.get('city') || hashCity || 'los-angeles';
       loadCity(initialCity);
 
       // Event listener on selector buttons
