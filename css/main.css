@@ -126,6 +126,7 @@ p {
    Pre-Header Top Trust & Compliance Bar
    ========================================================================== */
 .top-trust-bar {
+  display: none !important;
   background: #061325 !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   font-size: 0.76rem;
@@ -1930,6 +1931,7 @@ p {
    Breadcrumb Bar & Standalone Independent Calculator Pages
    ========================================================================== */
 .breadcrumb-bar {
+  display: none !important;
   padding: 0.85rem 0;
   font-size: 0.85rem;
   color: var(--color-text-dim);
