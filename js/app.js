@@ -583,64 +583,140 @@ function initCalculators() {
 }
 
 // 5. Quote Lead Generation Modal (Simulating MediaAlpha / EverQuote Funnel)
-function initLeadModal() {
+const INITIAL_MODAL_FORM_HTML = `
+  <h3 id="modal-title" style="margin-bottom: 0.5rem;">Get Your Free Rate Comparison</h3>
+  <p style="font-size: 0.9rem; margin-bottom: 1.5rem;">Compare rates from top US carriers.</p>
+  <form id="lead-quote-form">
+    <input type="hidden" id="modal-carrier-name" value="All Major Carriers">
+    <div class="form-group" style="margin-bottom: 1rem;">
+      <label for="modal-zip">Your US ZIP Code:</label>
+      <input type="text" id="modal-zip" class="form-control" placeholder="e.g. 90210" required maxlength="5">
+    </div>
+    <div class="form-group" style="margin-bottom: 1rem;">
+      <label for="modal-coverage-type">Coverage Needed:</label>
+      <select id="modal-coverage-type" class="form-control">
+        <option value="Auto Insurance">Auto Insurance</option>
+        <option value="Home & Auto Bundle">Home + Auto Multi-Policy</option>
+        <option value="Homeowners Insurance">Homeowners Insurance</option>
+        <option value="Renters Insurance">Renters Insurance</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Find Matching Rates &rarr;</button>
+  </form>
+`;
+
+function ensureQuoteModalExists() {
+  let modal = document.getElementById('quote-modal');
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.className = 'modal-overlay hidden';
+    modal.id = 'quote-modal';
+    modal.setAttribute('role', 'dialog');
+    modal.setAttribute('aria-modal', 'true');
+    modal.innerHTML = `
+      <div class="modal-card">
+        <button class="modal-close-btn" id="close-modal-btn" aria-label="Close modal">✕</button>
+        <div id="modal-dynamic-content">
+          ${INITIAL_MODAL_FORM_HTML}
+        </div>
+      </div>
+    `;
+    document.body.appendChild(modal);
+  }
+  return modal;
+}
+
+window.openQuoteModal = function(carrier = 'All Major Carriers', zip = '', state = '') {
+  const modal = ensureQuoteModalExists();
+  const modalBody = document.getElementById('modal-dynamic-content');
+
+  // Reset to clean form if previously submitted to result view
+  if (modalBody && !document.getElementById('lead-quote-form')) {
+    modalBody.innerHTML = INITIAL_MODAL_FORM_HTML;
+    bindModalForm();
+  }
+
+  const carrierInput = document.getElementById('modal-carrier-name');
+  const zipInput = document.getElementById('modal-zip');
+  const titleEl = document.getElementById('modal-title');
+
+  if (carrierInput) carrierInput.value = carrier || 'All Major Carriers';
+  if (zipInput) {
+    if (zip) zipInput.value = zip;
+    if (window.AddressIntelligence && !zipInput._hasAutocomplete) {
+      window.AddressIntelligence.attachAutocomplete(zipInput);
+      zipInput._hasAutocomplete = true;
+    }
+  }
+
+  if (titleEl) {
+    titleEl.textContent = carrier && carrier !== 'All Major Carriers'
+      ? `Get Your Free ${carrier} Rate Comparison`
+      : 'Get Your Free Rate Comparison';
+  }
+
+  modal.classList.remove('hidden');
+
+  if (zipInput && !zip) {
+    setTimeout(() => zipInput.focus(), 80);
+  }
+};
+
+window.closeQuoteModal = function() {
   const modal = document.getElementById('quote-modal');
-  const closeBtn = document.getElementById('close-modal-btn');
+  if (modal) modal.classList.add('hidden');
+};
+
+function bindModalForm() {
   const leadForm = document.getElementById('lead-quote-form');
   const modalZipInput = document.getElementById('modal-zip');
 
-  // Attach autocomplete intelligence to modal zip input
-  if (modalZipInput && window.AddressIntelligence) {
+  if (modalZipInput && window.AddressIntelligence && !modalZipInput._hasAutocomplete) {
     window.AddressIntelligence.attachAutocomplete(modalZipInput);
+    modalZipInput._hasAutocomplete = true;
   }
 
-  if (closeBtn && modal) {
-    closeBtn.addEventListener('click', () => {
-      modal.classList.add('hidden');
-    });
-  }
+  if (!leadForm || leadForm._bound) return;
+  leadForm._bound = true;
 
-  if (modal) {
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) modal.classList.add('hidden');
-    });
-  }
+  leadForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const zip = (modalZipInput ? modalZipInput.value : '90210').trim();
+    const carrier = (document.getElementById('modal-carrier-name') ? document.getElementById('modal-carrier-name').value : '') || 'Top Rated Carriers';
+    const coverageType = (document.getElementById('modal-coverage-type') ? document.getElementById('modal-coverage-type').value : 'Auto Insurance');
 
-  if (leadForm) {
-    leadForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const zip = (modalZipInput ? modalZipInput.value : '90210').trim();
-      const carrier = document.getElementById('modal-carrier-name').value || 'Top Rated Carriers';
-      const coverageType = document.getElementById('modal-coverage-type').value;
-
-      // Validate ZIP Code against 33,000+ US postal directory
-      if (window.AddressIntelligence && window.AddressIntelligence.isReady) {
-        const check = window.AddressIntelligence.validateZipInput(zip);
-        if (!check.isValid) {
-          alert(`⚠️ Invalid US ZIP Code: "${zip}".\nPlease enter a recognized 5-digit US ZIP code (e.g. 90210, 33109, 75001) or choose from the suggestions.`);
-          if (modalZipInput) modalZipInput.focus();
-          return;
-        }
+    // Validate ZIP Code against 33,000+ US postal directory
+    if (window.AddressIntelligence && window.AddressIntelligence.isReady) {
+      const check = window.AddressIntelligence.validateZipInput(zip);
+      if (!check.isValid) {
+        alert(`⚠️ Invalid US ZIP Code: "${zip}".\nPlease enter a recognized 5-digit US ZIP code (e.g. 90210, 33109, 75001) or choose from the suggestions.`);
+        if (modalZipInput) modalZipInput.focus();
+        return;
       }
+    }
 
-      const state = resolveZipToState(zip) || {
-        code: 'US',
-        name: 'United States',
-        minLiability: '25/50/25',
-        faultSystem: 'At-Fault (Tort)',
-        avgAnnualAuto: 1680,
-        avgAnnualHome: 1530
-      };
+    const state = (typeof resolveZipToState === 'function' ? resolveZipToState(zip) : null) || {
+      code: 'US',
+      name: 'United States',
+      minLiability: '25/50/25',
+      faultSystem: 'At-Fault (Tort)',
+      avgAnnualAuto: 1680,
+      avgAnnualHome: 1530
+    };
 
-      const cObj = US_CARRIERS_DATA.find(c => c.name.toLowerCase() === carrier.toLowerCase()) || US_CARRIERS_DATA[0];
-      const targetUrl = cObj ? cObj.quoteUrl : 'https://www.geico.com';
-      const agentPhone = cObj ? cObj.agentPhone : '1-800-555-0199';
+    const cObj = (typeof US_CARRIERS_DATA !== 'undefined')
+      ? (US_CARRIERS_DATA.find(c => c.name.toLowerCase() === carrier.toLowerCase()) || US_CARRIERS_DATA[0])
+      : { name: carrier, avgAnnualAuto: 1680, amBestRating: 'A+', quoteUrl: 'https://policyguideusa.com', agentPhone: '1-800-555-0199' };
 
-      const modalBody = document.getElementById('modal-dynamic-content');
-      const locationLabel = state.matchedCity 
-        ? `${state.matchedCity}, ${state.code}` 
-        : state.name;
+    const targetUrl = cObj.quoteUrl || 'https://policyguideusa.com';
+    const agentPhone = cObj.agentPhone || '1-800-555-0199';
 
+    const modalBody = document.getElementById('modal-dynamic-content');
+    const locationLabel = state.matchedCity 
+      ? `${state.matchedCity}, ${state.code}` 
+      : state.name;
+
+    if (modalBody) {
       modalBody.innerHTML = `
         <div class="quote-redirect-view animate-fade-in">
           <div class="loading-state" id="modal-loading-indicator">
@@ -691,11 +767,11 @@ function initLeadModal() {
             </div>
 
             <div style="text-align:center;">
-              <a href="${targetUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-success" style="width:100%; margin-bottom:0.75rem; font-size:1.05rem; padding:0.85rem;">
+              <a href="${targetUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-success" style="width:100%; margin-bottom:0.75rem; font-size:1.05rem; padding:0.85rem; display:block;">
                 Lock In Your ${carrier} Rate Online &rarr;
               </a>
               <div style="font-size:0.82rem; color:var(--color-text-muted); margin-bottom:0.5rem;">— OR SPEAK WITH A LICENSED STATE AGENT NOW —</div>
-              <a href="tel:${agentPhone}" class="btn btn-outline" style="width:100%; font-size:0.95rem;">
+              <a href="tel:${agentPhone}" class="btn btn-outline" style="width:100%; font-size:0.95rem; display:block;">
                 📞 Call Dedicated Line: ${agentPhone}
               </a>
               <small style="display:block; margin-top:0.75rem; font-size:0.72rem; color:var(--color-text-dim);">
@@ -705,33 +781,48 @@ function initLeadModal() {
           `;
           resultCard.classList.remove('hidden');
         }
-      }, 1100);
-    });
-  }
+      }, 1000);
+    }
+  });
+}
+
+function initLeadModal() {
+  ensureQuoteModalExists();
+  bindModalForm();
+
+  // Document-level delegated click handler for all modal triggers
+  document.addEventListener('click', (e) => {
+    const trigger = e.target.closest('.open-quote-modal');
+    if (trigger) {
+      e.preventDefault();
+      const carrier = trigger.getAttribute('data-carrier') || 'All Major Carriers';
+      const zip = trigger.getAttribute('data-zip') || '';
+      const state = trigger.getAttribute('data-state') || '';
+      window.openQuoteModal(carrier, zip, state);
+      return;
+    }
+
+    if (e.target.matches('#close-modal-btn') || e.target.closest('#close-modal-btn')) {
+      e.preventDefault();
+      window.closeQuoteModal();
+      return;
+    }
+
+    if (e.target.id === 'quote-modal') {
+      window.closeQuoteModal();
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      window.closeQuoteModal();
+    }
+  });
 }
 
 function attachModalTriggers() {
-  const triggers = document.querySelectorAll('.open-quote-modal');
-  const modal = document.getElementById('quote-modal');
-  const carrierInput = document.getElementById('modal-carrier-name');
-  const zipInput = document.getElementById('modal-zip');
-
-  triggers.forEach(btn => {
-    btn.onclick = () => {
-      const carrier = btn.getAttribute('data-carrier') || 'All Major Carriers';
-      const zip = btn.getAttribute('data-zip') || '';
-      if (carrierInput) carrierInput.value = carrier;
-      if (zipInput && zip) {
-        zipInput.value = zip;
-        zipInput.dispatchEvent(new Event('input', { bubbles: true }));
-      }
-
-      const titleEl = document.getElementById('modal-title');
-      if (titleEl) titleEl.textContent = `Get Your Free ${carrier} Rate Comparison`;
-
-      if (modal) modal.classList.remove('hidden');
-    };
-  });
+  // Maintained for backward compatibility with existing inline page hooks
+  bindModalForm();
 }
 
 // 6. 50+ SEO Blog Posts & Article Reader Logic
