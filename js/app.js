@@ -908,13 +908,25 @@ window.openArticleReader = function(postId) {
   window.location.href = 'article.html?id=' + encodeURIComponent(postId);
 };
 
-// 7. Mobile Navigation
+// 7. Mobile Navigation & Dropdown Toggle
 function initMobileMenu() {
   const menuBtn = document.getElementById('mobile-menu-btn');
   const navLinks = document.getElementById('nav-links');
   if (menuBtn && navLinks) {
     menuBtn.addEventListener('click', () => {
       navLinks.classList.toggle('nav-open');
+    });
+  }
+
+  // Mobile / Touch support for Tools dropdown
+  const dropdownToggle = document.querySelector('.nav-dropdown-toggle');
+  const navDropdown = document.querySelector('.nav-dropdown');
+  if (dropdownToggle && navDropdown) {
+    dropdownToggle.addEventListener('click', (e) => {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        navDropdown.classList.toggle('open');
+      }
     });
   }
 }
