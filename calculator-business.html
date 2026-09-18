@@ -224,12 +224,53 @@
             </div>
           </div>
 
+          <!-- Featured Commercial Partners: Simply Business & Hiscox -->
+          <div style="margin-top: 1.75rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 1rem;">
+            <!-- Simply Business Card -->
+            <div style="background: var(--color-surface); border: 2px solid rgba(0, 196, 140, 0.35); border-radius: var(--radius-md); padding: 1.35rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: var(--shadow-sm);">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+                  <div style="width: 140px; height: 38px;">
+                    <svg viewBox="0 0 160 48" class="carrier-brand-svg" aria-label="Simply Business Logo"><rect width="160" height="48" rx="8" fill="#502C7A"/><text x="16" y="32" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="20" fill="#FFF">SB</text><text x="48" y="23" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="10.5" fill="#FFF">SIMPLY</text><text x="48" y="35" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="10.5" fill="#38BDF8">BUSINESS</text></svg>
+                  </div>
+                  <span class="badge badge-success" style="font-size: 0.75rem; padding: 0.2rem 0.5rem;">Multi-Carrier Broker</span>
+                </div>
+                <h4 style="margin: 0 0 0.35rem; font-size: 1.05rem;">Simply Business US</h4>
+                <p style="margin: 0 0 1rem; font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.45;">
+                  Compare customized small business insurance quotes from top national carriers in under 10 minutes. Instant digital Certificate of Insurance (COI) download.
+                </p>
+              </div>
+              <a href="https://www.simplybusiness.com" target="_blank" rel="noopener noreferrer sponsored" class="btn btn-primary btn-sm btn-block" id="simplybiz-affiliate-btn" style="text-align: center; text-decoration: none; font-weight: 700; padding: 0.65rem;">
+                Compare Quotes at Simply Business &rarr;
+              </a>
+            </div>
+
+            <!-- Hiscox Card -->
+            <div style="background: var(--color-surface); border: 2px solid rgba(56, 189, 248, 0.35); border-radius: var(--radius-md); padding: 1.35rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: var(--shadow-sm);">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+                  <div style="width: 140px; height: 38px;">
+                    <svg viewBox="0 0 160 48" class="carrier-brand-svg" aria-label="Hiscox Logo"><rect width="160" height="48" rx="8" fill="#E60000"/><text x="16" y="32" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="21" fill="#FFF" letter-spacing="1">HISCOX</text><text x="100" y="30" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="9" fill="#FFF">BUSINESS</text></svg>
+                  </div>
+                  <span class="badge badge-primary" style="font-size: 0.75rem; padding: 0.2rem 0.5rem;">Freelance & E&O</span>
+                </div>
+                <h4 style="margin: 0 0 0.35rem; font-size: 1.05rem;">Hiscox Small Business</h4>
+                <p style="margin: 0 0 1rem; font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.45;">
+                  Direct specialized General Liability & Professional Liability (E&O) tailored specifically for independent consultants, tech freelancers, and service contractors.
+                </p>
+              </div>
+              <a href="https://www.hiscox.com" target="_blank" rel="noopener noreferrer sponsored" class="btn btn-primary btn-sm btn-block" id="hiscox-affiliate-btn" style="text-align: center; text-decoration: none; font-weight: 700; padding: 0.65rem;">
+                Get Hiscox Direct Quote &rarr;
+              </a>
+            </div>
+          </div>
+
           <div style="text-align: center; margin-top: 1.5rem;">
-            <button class="btn btn-success open-quote-modal" data-carrier="Top Commercial Insurers" style="font-size: 1.05rem; padding: 0.85rem 1.75rem;">
-              Compare Business Insurance Quotes Online &rarr;
+            <button class="btn btn-outline open-quote-modal" data-carrier="Top Commercial Insurers" style="font-size: 0.95rem; padding: 0.75rem 1.5rem;">
+              Compare Other Commercial Insurance Carriers &rarr;
             </button>
             <div style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--color-text-dim);">
-              The Hartford, Travelers, Hiscox, NEXT Insurance, Nationwide Commercial
+              The Hartford, Travelers, NEXT Insurance, Nationwide Commercial, Chubb
             </div>
           </div>
         </div>
@@ -320,6 +361,13 @@
       document.getElementById('biz-calc-btn').addEventListener('click', runBizCalc);
       document.querySelectorAll('#calc-biz-form select').forEach(sel => sel.addEventListener('change', runBizCalc));
       runBizCalc();
+
+      if (typeof AFFILIATE_PARTNERS !== 'undefined') {
+        const simplyBtn = document.getElementById('simplybiz-affiliate-btn');
+        if (simplyBtn && AFFILIATE_PARTNERS.simplyBusiness) simplyBtn.href = AFFILIATE_PARTNERS.simplyBusiness.trackingUrl;
+        const hiscoxBtn = document.getElementById('hiscox-affiliate-btn');
+        if (hiscoxBtn && AFFILIATE_PARTNERS.hiscox) hiscoxBtn.href = AFFILIATE_PARTNERS.hiscox.trackingUrl;
+      }
     });
   </script>
 </body>

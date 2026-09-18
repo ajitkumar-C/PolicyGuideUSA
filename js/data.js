@@ -68,7 +68,115 @@ const CARRIER_LOGOS = {
   nationwide: `<svg viewBox="0 0 160 48" class="carrier-brand-svg" aria-label="Nationwide Logo"><rect width="160" height="48" rx="8" fill="#005596"/><path d="M16 34V14l10 12V14h4v20L20 22v12z" fill="#FFF"/><circle cx="34" cy="24" r="3" fill="#38BDF8"/><text x="44" y="30" font-family="'Space Grotesk', sans-serif" font-weight="800" font-size="15" fill="#FFF">Nationwide</text></svg>`,
   farmers: `<svg viewBox="0 0 160 48" class="carrier-brand-svg" aria-label="Farmers Insurance Logo"><rect width="160" height="48" rx="8" fill="#0C2340"/><path d="M16 16h16l-8 18z" fill="#C8102E"/><circle cx="24" cy="20" r="3" fill="#FFF"/><text x="40" y="30" font-family="'Space Grotesk', sans-serif" font-weight="800" font-size="18" fill="#FFF">FARMERS</text></svg>`,
   'american-family': `<svg viewBox="0 0 160 48" class="carrier-brand-svg" aria-label="American Family Logo"><rect width="160" height="48" rx="8" fill="#002B49"/><path d="M16 26l8-10 8 10h-16z" fill="#C8102E"/><rect x="21" y="26" width="6" height="8" fill="#FFF"/><text x="38" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12" fill="#FFF">AMERICAN</text><text x="38" y="36" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12" fill="#38BDF8">FAMILY</text></svg>`,
-  erie: `<svg viewBox="0 0 160 48" class="carrier-brand-svg" aria-label="Erie Insurance Logo"><rect width="160" height="48" rx="8" fill="#0F2B48"/><path d="M24 14l10 6v10l-10 6-10-6V20z" fill="#C8102E"/><text x="24" y="28" text-anchor="middle" font-weight="900" font-size="10" fill="#FFF">E</text><text x="42" y="30" font-family="'Space Grotesk', sans-serif" font-weight="800" font-size="20" fill="#FFF">ERIE</text></svg>`
+  erie: `<svg viewBox="0 0 160 48" class="carrier-brand-svg" aria-label="Erie Insurance Logo"><rect width="160" height="48" rx="8" fill="#0F2B48"/><path d="M24 14l10 6v10l-10 6-10-6V20z" fill="#C8102E"/><text x="24" y="28" text-anchor="middle" font-weight="900" font-size="10" fill="#FFF">E</text><text x="42" y="30" font-family="'Space Grotesk', sans-serif" font-weight="800" font-size="20" fill="#FFF">ERIE</text></svg>`,
+  usaa: `<svg viewBox="0 0 160 48" class="carrier-brand-svg" aria-label="USAA Logo"><rect width="160" height="48" rx="8" fill="#0C2340"/><path d="M18 16l4 16h4l-4-16h-4zm7 0l4 16h4l-4-16h-4zm7 0l4 16h4l-4-16h-4z" fill="#C5A059"/><text x="46" y="32" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="22" fill="#FFF" letter-spacing="2">USAA</text></svg>`,
+  aaa: `<svg viewBox="0 0 160 48" class="carrier-brand-svg" aria-label="AAA Logo"><rect width="160" height="48" rx="8" fill="#D11242"/><ellipse cx="28" cy="24" rx="20" ry="14" fill="#003366"/><text x="28" y="30" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="18" fill="#FFF" text-anchor="middle" letter-spacing="1">AAA</text><text x="64" y="30" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="14" fill="#FFF">AUTO CLUB</text></svg>`,
+  'new-york-life': `<svg viewBox="0 0 160 48" class="carrier-brand-svg" aria-label="New York Life Logo"><rect width="160" height="48" rx="8" fill="#002D62"/><rect x="14" y="14" width="20" height="20" rx="3" fill="#008080"/><text x="24" y="28" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="12" fill="#FFF" text-anchor="middle">NYL</text><text x="42" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="11" fill="#FFF">NEW YORK</text><text x="42" y="36" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="11" fill="#38BDF8">LIFE</text></svg>`,
+  'simply-business': `<svg viewBox="0 0 160 48" class="carrier-brand-svg" aria-label="Simply Business Logo"><rect width="160" height="48" rx="8" fill="#502C7A"/><text x="16" y="32" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="20" fill="#FFF">SB</text><text x="48" y="23" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="10.5" fill="#FFF">SIMPLY</text><text x="48" y="35" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="10.5" fill="#38BDF8">BUSINESS</text></svg>`,
+  hiscox: `<svg viewBox="0 0 160 48" class="carrier-brand-svg" aria-label="Hiscox Logo"><rect width="160" height="48" rx="8" fill="#E60000"/><text x="16" y="32" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="21" fill="#FFF" letter-spacing="1">HISCOX</text><text x="100" y="30" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="9" fill="#FFF">BUSINESS</text></svg>`,
+  travelex: `<svg viewBox="0 0 160 48" class="carrier-brand-svg" aria-label="Travelex Logo"><rect width="160" height="48" rx="8" fill="#E31837"/><circle cx="24" cy="24" r="12" fill="#002D62"/><path d="M18 24h12M24 18v12" stroke="#FFF" stroke-width="2.5"/><text x="44" y="30" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="17" fill="#FFF">Travelex</text></svg>`,
+  heymondo: `<svg viewBox="0 0 160 48" class="carrier-brand-svg" aria-label="Heymondo Logo"><rect width="160" height="48" rx="8" fill="#00A86B"/><circle cx="24" cy="24" r="10" fill="#FFF"/><circle cx="24" cy="24" r="5" fill="#00A86B"/><text x="42" y="31" font-family="'Space Grotesk', sans-serif" font-weight="800" font-size="17" fill="#FFF">heymondo</text></svg>`,
+  aflac: `<svg viewBox="0 0 160 48" class="carrier-brand-svg" aria-label="Aflac Logo"><rect width="160" height="48" rx="8" fill="#00A3E0"/><circle cx="24" cy="24" r="11" fill="#FFF"/><path d="M19 24c2-4 8-4 10 0" stroke="#00A3E0" stroke-width="2.5" fill="none"/><text x="44" y="32" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="22" fill="#FFF" letter-spacing="1">Aflac</text></svg>`
+};
+
+// Centralized High-Paying Affiliate Partner Configuration (CJ Affiliate & Direct)
+const AFFILIATE_PARTNERS = {
+  newYorkLife: {
+    id: 'new-york-life',
+    name: 'New York Life Insurance',
+    cjAdvertiserId: '6580343',
+    category: 'Life Insurance',
+    payoutRate: '$75.00 USD / Lead',
+    ratingBadge: 'AM Best A++ (Superior) • 175+ Years',
+    tagline: 'Lock in guaranteed level-term protection from America’s premier mutual insurer.',
+    features: ['Level premiums locked for 10, 20, or 30 years', 'Conversion privilege to permanent whole life', 'Industry-highest financial strength rating'],
+    trackingUrl: 'https://www.newyorklife.com', // Replace with your CJ tracking link when approved
+    buttonText: 'Get Official New York Life Quote →'
+  },
+  simplyBusiness: {
+    id: 'simply-business',
+    name: 'Simply Business US',
+    cjAdvertiserId: '5808859',
+    category: 'Commercial / Small Business',
+    payoutRate: '$30.00 USD / Lead',
+    ratingBadge: 'Top Small Business Broker • EPC $1,470',
+    tagline: 'Compare custom quotes from top commercial carriers in under 10 minutes.',
+    features: ['General Liability, Professional E&O, and BOP', 'Instant Certificate of Insurance (COI) download', 'Specialized for contractors, consultants & LLCS'],
+    trackingUrl: 'https://www.simplybusiness.com', // Replace with your CJ tracking link when approved
+    buttonText: 'Compare Rates at Simply Business →'
+  },
+  hiscox: {
+    id: 'hiscox',
+    name: 'Hiscox Small Business',
+    cjAdvertiserId: '4165310',
+    category: 'Commercial Liability',
+    payoutRate: '$15.00 USD / Lead',
+    ratingBadge: 'A (Excellent) • Freelancer Specialist',
+    tagline: 'Direct, tailored business liability tailored for independent contractors and micro-enterprises.',
+    features: ['Immediate digital policy issuance', 'Monthly payment options with zero admin fees', 'Tailored coverage across 180+ business professions'],
+    trackingUrl: 'https://www.hiscox.com', // Replace with your CJ tracking link when approved
+    buttonText: 'Get Hiscox Business Quote →'
+  },
+  travelex: {
+    id: 'travelex',
+    name: 'Travelex Insurance Services',
+    cjAdvertiserId: '4047032',
+    category: 'Travel Insurance',
+    payoutRate: 'Lead + Sale (EPC $380+)',
+    ratingBadge: 'America’s Most Trusted Travel Brand',
+    tagline: '100% trip cancellation, emergency medical evacuation, and lost baggage protection.',
+    features: ['Pre-existing condition waiver available', 'Kids covered at no additional cost on select plans', '24/7 worldwide emergency travel assistance'],
+    trackingUrl: 'https://www.travelexinsurance.com', // Replace with your CJ tracking link when approved
+    buttonText: 'Get Travelex Travel Quote →'
+  },
+  heymondo: {
+    id: 'heymondo',
+    name: 'Heymondo Travel Insurance',
+    cjAdvertiserId: '6810155',
+    category: 'Travel Insurance',
+    payoutRate: '12% of Sale',
+    ratingBadge: '4.7/5 Rated • App-Based Medical Claims',
+    tagline: 'Zero out-of-pocket medical bills abroad with direct provider billing through the Heymondo mobile app.',
+    features: ['24/7 medical chat with real doctors via app', 'Up to $10,000,000 in emergency medical coverage', 'Zero deductible options on international medical'],
+    trackingUrl: 'https://heymondo.com', // Replace with your CJ tracking link when approved
+    buttonText: 'Get Heymondo Travel Insurance →'
+  },
+  aflac: {
+    id: 'aflac',
+    name: 'Aflac Supplemental Insurance',
+    cjAdvertiserId: '5424279',
+    category: 'Supplemental Health',
+    payoutRate: '$16.00 USD / Lead',
+    ratingBadge: 'America’s #1 Supplemental Insurer',
+    tagline: 'Cash payouts sent directly to you to cover high ACA health deductibles and living expenses.',
+    features: ['Pays cash directly to you, not doctors or hospitals', 'Use cash for copays, deductibles, rent, or groceries', 'Affordable standalone plans starting under $20/month'],
+    trackingUrl: 'https://www.aflac.com', // Replace with your CJ tracking link when approved
+    buttonText: 'Explore Aflac Supplemental Plans →'
+  },
+  usaa: {
+    id: 'usaa',
+    name: 'USAA',
+    cjAdvertiserId: '3364990',
+    category: 'Military Auto & Home',
+    payoutRate: 'Up to $36.00 USD / Lead',
+    ratingBadge: 'A++ (Superior) • #1 Customer Satisfaction',
+    tagline: 'Exclusive, premier auto and home coverage for active military, veterans, and their families.',
+    features: ['Lowest average auto rates nationwide for military', 'SafePilot telematics saves up to 30%', 'Zero deductible on uniforms stolen while deployed'],
+    trackingUrl: 'https://www.usaa.com', // Replace with your CJ tracking link when approved
+    buttonText: 'Get Official USAA Quote →'
+  },
+  aaa: {
+    id: 'aaa',
+    name: 'AAA - Auto Club',
+    cjAdvertiserId: '5128949',
+    category: 'Auto & Roadside',
+    payoutRate: '10% of Sale',
+    ratingBadge: 'A (Excellent) • 60M+ Members',
+    tagline: 'Legendary nationwide roadside assistance bundled with competitive auto and home policies.',
+    features: ['24/7 towing, battery boost, lockout & flat tire dispatch', 'Generous member auto insurance discounts', 'Travel planning and worldwide hotel discounts'],
+    trackingUrl: 'https://www.aaa.com', // Replace with your CJ tracking link when approved
+    buttonText: 'Get AAA Insurance & Membership →'
+  }
 };
 
 const US_CARRIERS_DATA = [
@@ -391,6 +499,70 @@ const US_CARRIERS_DATA = [
     ],
     quoteUrl: 'https://www.erieinsurance.com',
     agentPhone: '1-800-458-0811'
+  },
+  {
+    id: 'usaa',
+    name: 'USAA',
+    logoSvg: CARRIER_LOGOS['usaa'],
+    tagline: 'Best for Military Members, Veterans & Their Families',
+    bestFor: 'Active military, veterans, highest customer satisfaction and low baseline rates',
+    amBestRating: 'A++ (Superior)',
+    jdPowerScore: 4.8,
+    avgAnnualAuto: 1240,
+    avgAnnualHome: 1190,
+    marketShare: '5.9% (Dedicated Military Base)',
+    telematics: {
+      name: 'SafePilot',
+      maxDiscount: 'Up to 30% discount upon policy renewal',
+      monitors: 'Hands-free calling, handheld phone use, harsh braking, miles driven',
+      surchargeRisk: 'NO in most states - Focuses on positive safe-driver renewal discounts.',
+      verdict: 'One of the highest-rated safe driving apps among US service members.'
+    },
+    popularDiscounts: ['Military Installation Garaging Discount (up to 15%)', 'SafePilot Telematics', 'Multi-Vehicle', 'Family Legacy Discount', 'Annual Low Mileage'],
+    linesOffered: ['Personal Auto', 'Homeowners', 'Renters', 'Valuable Personal Property', 'Life Insurance', 'Umbrella'],
+    pros: [
+      'Ranks highest in virtually every national J.D. Power customer satisfaction study',
+      'Industry-leading low rates for eligible active military and veteran households',
+      'Unique perks like worldwide deployment property storage and uniform coverage'
+    ],
+    cons: [
+      'Strict eligibility requirements (only open to active duty, veterans, and immediate family members)',
+      'No walk-in branch network (primarily digital, app, and phone management)'
+    ],
+    quoteUrl: 'https://www.usaa.com',
+    agentPhone: '1-800-531-8722'
+  },
+  {
+    id: 'aaa',
+    name: 'AAA - Auto Club',
+    logoSvg: CARRIER_LOGOS['aaa'],
+    tagline: 'Best for Roadside Assistance Bundling & Mature Drivers',
+    bestFor: 'Bundling auto club roadside assistance with auto/home, mature driver discounts',
+    amBestRating: 'A (Excellent)',
+    jdPowerScore: 4.1,
+    avgAnnualAuto: 1690,
+    avgAnnualHome: 1420,
+    marketShare: '3.4% (Across Regional Auto Clubs)',
+    telematics: {
+      name: 'AAA OnBoard / Drive',
+      maxDiscount: 'Up to 20% discount on auto policy',
+      monitors: 'Speed, smooth braking, cornering, phone distraction',
+      surchargeRisk: 'NO in most regional motor clubs - Discount only program.',
+      verdict: 'Solid program especially when combined with existing AAA travel club benefits.'
+    },
+    popularDiscounts: ['AAA Member Loyalty Discount', 'OnBoard Telematics', 'Multiple Policy (Home + Auto)', 'Mature Driver Refresher Course', 'Good Student'],
+    linesOffered: ['Personal Auto', 'Homeowners', 'Renters', 'Roadside Assistance Memberships', 'Travel Insurance', 'Boat/RV'],
+    pros: [
+      'Legendary 24/7 nationwide roadside assistance dispatch bundled into policy',
+      'Exclusive travel agency perks, hotel discounts, and free trip planning',
+      'Local brick-and-mortar branch service in most US metropolitan areas'
+    ],
+    cons: [
+      'Requires purchasing an annual AAA Auto Club membership to access insurance',
+      'Underwriting and rates vary by regional club (e.g. CSAA vs Auto Club of SoCal vs AAA Northeast)'
+    ],
+    quoteUrl: 'https://www.aaa.com',
+    agentPhone: '1-800-222-4357'
   }
 ];
 

@@ -213,12 +213,53 @@
             </div>
           </div>
 
+          <!-- Featured Travel Insurance Partners: Travelex & Heymondo -->
+          <div style="margin-top: 1.75rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 1rem;">
+            <!-- Travelex Card -->
+            <div style="background: var(--color-surface); border: 2px solid rgba(0, 196, 140, 0.35); border-radius: var(--radius-md); padding: 1.35rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: var(--shadow-sm);">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+                  <div style="width: 120px; height: 36px;">
+                    <svg viewBox="0 0 160 48" class="carrier-brand-svg" aria-label="Travelex Logo"><rect width="160" height="48" rx="8" fill="#E31837"/><circle cx="24" cy="24" r="12" fill="#002D62"/><path d="M18 24h12M24 18v12" stroke="#FFF" stroke-width="2.5"/><text x="44" y="30" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="17" fill="#FFF">Travelex</text></svg>
+                  </div>
+                  <span class="badge badge-success" style="font-size: 0.75rem; padding: 0.2rem 0.5rem;">Top US Brand</span>
+                </div>
+                <h4 style="margin: 0 0 0.35rem; font-size: 1.05rem;">Travelex Insurance Services</h4>
+                <p style="margin: 0 0 1rem; font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.45;">
+                  Premier US coverage for international trips, cruises, flight cancellations, and medical evacuation. Kids covered at no added cost on select plans.
+                </p>
+              </div>
+              <a href="https://www.travelexinsurance.com" target="_blank" rel="noopener noreferrer sponsored" class="btn btn-primary btn-sm btn-block" id="travelex-affiliate-btn" style="text-align: center; text-decoration: none; font-weight: 700; padding: 0.65rem;">
+                Get Travelex Quote &rarr;
+              </a>
+            </div>
+
+            <!-- Heymondo Card -->
+            <div style="background: var(--color-surface); border: 2px solid rgba(56, 189, 248, 0.35); border-radius: var(--radius-md); padding: 1.35rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: var(--shadow-sm);">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+                  <div style="width: 120px; height: 36px;">
+                    <svg viewBox="0 0 160 48" class="carrier-brand-svg" aria-label="Heymondo Logo"><rect width="160" height="48" rx="8" fill="#00A86B"/><circle cx="24" cy="24" r="10" fill="#FFF"/><circle cx="24" cy="24" r="5" fill="#00A86B"/><text x="42" y="31" font-family="'Space Grotesk', sans-serif" font-weight="800" font-size="17" fill="#FFF">heymondo</text></svg>
+                  </div>
+                  <span class="badge badge-primary" style="font-size: 0.75rem; padding: 0.2rem 0.5rem;">App Medical Claims</span>
+                </div>
+                <h4 style="margin: 0 0 0.35rem; font-size: 1.05rem;">Heymondo Travel Insurance</h4>
+                <p style="margin: 0 0 1rem; font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.45;">
+                  Zero out-of-pocket medical bills abroad with direct provider billing through the Heymondo mobile app + 24/7 doctor chat in English.
+                </p>
+              </div>
+              <a href="https://heymondo.com" target="_blank" rel="noopener noreferrer sponsored" class="btn btn-primary btn-sm btn-block" id="heymondo-affiliate-btn" style="text-align: center; text-decoration: none; font-weight: 700; padding: 0.65rem;">
+                Get Heymondo Cover &rarr;
+              </a>
+            </div>
+          </div>
+
           <div style="text-align: center; margin-top: 1.5rem;">
-            <button class="btn btn-success open-quote-modal" data-carrier="Top Travel Insurers" style="font-size: 1.05rem; padding: 0.85rem 1.75rem;">
-              Compare Travel Insurance Plans Online &rarr;
+            <button class="btn btn-outline open-quote-modal" data-carrier="Top Travel Insurers" style="font-size: 0.95rem; padding: 0.75rem 1.5rem;">
+              Compare Other Travel Insurance Carriers &rarr;
             </button>
             <div style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--color-text-dim);">
-              Allianz Global Assistance, Travel Guard, AXA Assistance, Seven Corners
+              Allianz Global Assistance, Travel Guard, Seven Corners, World Nomads
             </div>
           </div>
         </div>
@@ -309,6 +350,13 @@
       document.getElementById('travel-calc-btn').addEventListener('click', runTravelCalc);
       document.querySelectorAll('#calc-travel-form select').forEach(sel => sel.addEventListener('change', runTravelCalc));
       runTravelCalc();
+
+      if (typeof AFFILIATE_PARTNERS !== 'undefined') {
+        const travelexBtn = document.getElementById('travelex-affiliate-btn');
+        if (travelexBtn && AFFILIATE_PARTNERS.travelex) travelexBtn.href = AFFILIATE_PARTNERS.travelex.trackingUrl;
+        const heymondoBtn = document.getElementById('heymondo-affiliate-btn');
+        if (heymondoBtn && AFFILIATE_PARTNERS.heymondo) heymondoBtn.href = AFFILIATE_PARTNERS.heymondo.trackingUrl;
+      }
     });
   </script>
 </body>

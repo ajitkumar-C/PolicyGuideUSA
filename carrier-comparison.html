@@ -415,7 +415,7 @@
               <tr>
                 <td class="comp-feature-col">Average Auto Premium</td>
                 <td><span style="font-size: 1.2rem; font-weight: 800;">$${c1.avgAnnualAuto}/yr</span></td>
-                <td><span style="font-size: 1.2rem; font-weight: 800;">$${c2.avgAnnualHome}/yr</span></td>
+                <td><span style="font-size: 1.2rem; font-weight: 800;">$${c2.avgAnnualAuto}/yr</span></td>
               </tr>
               <tr>
                 <td class="comp-feature-col">Average Home Premium</td>
@@ -456,12 +456,12 @@
               <tr>
                 <td class="comp-feature-col">Actions</td>
                 <td>
-                  <button class="btn btn-primary btn-sm btn-block open-quote-modal" data-carrier="${c1.name}">Get ${c1.name} Quote</button>
-                  <a href="tel:${c1.agentPhone}" class="btn btn-outline btn-sm btn-block" style="margin-top: 0.5rem;">📞 ${c1.agentPhone}</a>
+                  <a href="${(typeof AFFILIATE_PARTNERS !== 'undefined' && AFFILIATE_PARTNERS[c1.id]?.trackingUrl) || c1.quoteUrl}" target="_blank" rel="noopener noreferrer sponsored" class="btn btn-primary btn-sm btn-block">Get Official ${c1.name} Quote &rarr;</a>
+                  <button class="btn btn-outline btn-sm btn-block open-quote-modal" data-carrier="${c1.name}" style="margin-top: 0.45rem;">Compare Local Rates</button>
                 </td>
                 <td>
-                  <button class="btn btn-primary btn-sm btn-block open-quote-modal" data-carrier="${c2.name}">Get ${c2.name} Quote</button>
-                  <a href="tel:${c2.agentPhone}" class="btn btn-outline btn-sm btn-block" style="margin-top: 0.5rem;">📞 ${c2.agentPhone}</a>
+                  <a href="${(typeof AFFILIATE_PARTNERS !== 'undefined' && AFFILIATE_PARTNERS[c2.id]?.trackingUrl) || c2.quoteUrl}" target="_blank" rel="noopener noreferrer sponsored" class="btn btn-primary btn-sm btn-block">Get Official ${c2.name} Quote &rarr;</a>
+                  <button class="btn btn-outline btn-sm btn-block open-quote-modal" data-carrier="${c2.name}" style="margin-top: 0.45rem;">Compare Local Rates</button>
                 </td>
               </tr>
             </tbody>
@@ -512,9 +512,10 @@
               </small>
             </div>
 
-            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-              <button class="btn btn-primary open-quote-modal" data-carrier="${c.name}">Get Free ${c.name} Quote</button>
-              <a href="tel:${c.agentPhone}" class="btn btn-secondary">📞 Call Licensed Agent: ${c.agentPhone}</a>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+              <a href="${(typeof AFFILIATE_PARTNERS !== 'undefined' && AFFILIATE_PARTNERS[c.id]?.trackingUrl) || c.quoteUrl}" target="_blank" rel="noopener noreferrer sponsored" class="btn btn-primary">Get Official ${c.name} Quote &rarr;</a>
+              <button class="btn btn-outline open-quote-modal" data-carrier="${c.name}">Compare Local Rates</button>
+              <a href="tel:${c.agentPhone}" class="btn btn-secondary">📞 Call: ${c.agentPhone}</a>
             </div>
           </div>
         `).join('');
