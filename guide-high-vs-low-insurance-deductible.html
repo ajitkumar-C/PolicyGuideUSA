@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>High vs. Low Insurance Deductibles: How to Choose ($500 vs $1,000)</title>
+  <meta name="description" content="Calculate whether a high or low insurance deductible saves more money. Compare $500 vs $1,000 deductibles, break-even timelines, and emergency fund rules.">
+  <link rel="canonical" href="https://policyguideusa.com/guide-high-vs-low-insurance-deductible.html">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://policyguideusa.com/guide-high-vs-low-insurance-deductible.html">
+  <meta property="og:title" content="High vs. Low Insurance Deductibles: How to Choose ($500 vs $1,000)">
+  <meta property="og:description" content="Mathematical break-even analysis of $500 vs $1,000 auto and home insurance deductibles.">
+  <meta property="og:image" content="https://policyguideusa.com/assets/images/policyguide-logo.svg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="High vs. Low Insurance Deductibles | PolicyGuide USA">
+  <meta name="twitter:description" content="Stop overpaying on insurance premiums by picking the mathematical sweet spot for your deductible.">
+
+  <!-- Google tag (gtag.js) Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K343SHL2MW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-K343SHL2MW');
+  </script>
+
+  <link rel="stylesheet" href="css/main.css?v=20260914d">
+  <style>
+    .nav-dropdown { position: relative; display: inline-flex; align-items: center; }
+    .nav-dropdown-menu { display: none !important; position: absolute; top: calc(100% + 0.35rem); left: 50%; transform: translateX(-50%); background: #0F172A !important; min-width: 255px; padding: 0.5rem 0; border-radius: 12px; box-shadow: 0 20px 48px rgba(0,0,0,0.65); border: 1px solid rgba(255,255,255,0.15) !important; list-style: none !important; margin: 0; z-index: 9999; }
+    .nav-dropdown:hover .nav-dropdown-menu, .nav-dropdown:focus-within .nav-dropdown-menu, .nav-dropdown.open .nav-dropdown-menu { display: block !important; }
+    .nav-dropdown-menu li { list-style: none !important; margin: 0; padding: 0; }
+    .nav-dropdown-menu li a { display: block !important; padding: 0.55rem 1.15rem; color: #F1F5F9 !important; font-size: 0.9rem; font-weight: 600; text-decoration: none !important; white-space: nowrap; }
+    .nav-dropdown-menu li a:hover { background: #1E293B !important; color: #38BDF8 !important; }
+    [data-theme="light"] .nav-dropdown-menu { background: #FFFFFF !important; border-color: rgba(226,232,240,0.95) !important; box-shadow: 0 16px 42px rgba(10,25,47,0.2) !important; }
+    [data-theme="light"] .nav-dropdown-menu li a { color: #1E293B !important; }
+    [data-theme="light"] .nav-dropdown-menu li a:hover { background: #F1F5F9 !important; color: #0284C7 !important; }
+    @media (max-width: 768px) {
+      .nav-dropdown { width: 100%; flex-direction: column; align-items: flex-start; }
+      .nav-dropdown-toggle { width: 100%; justify-content: space-between; }
+      .nav-dropdown-menu { position: static !important; transform: none !important; width: 100% !important; background: rgba(255,255,255,0.08) !important; box-shadow: none !important; border: none !important; margin-top: 0.35rem !important; }
+    }
+    .article-content h2 { margin-top: 2.25rem; margin-bottom: 0.85rem; font-size: 1.65rem; color: var(--color-primary); }
+    .article-content h3 { margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1.25rem; }
+    .article-content p { line-height: 1.8; margin-bottom: 1.25rem; font-size: 1.05rem; }
+    .data-table-wrapper { overflow-x: auto; margin: 1.5rem 0 2rem; border-radius: 8px; border: 1px solid var(--color-border); }
+    .data-table { width: 100%; border-collapse: collapse; text-align: left; font-size: 0.95rem; }
+    .data-table th { background: rgba(56, 189, 248, 0.12); padding: 0.85rem 1rem; border-bottom: 2px solid var(--color-border); font-weight: 700; color: var(--color-text-main); }
+    .data-table td { padding: 0.85rem 1rem; border-bottom: 1px solid var(--color-border); }
+    .toc-box { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1.5rem; margin: 2rem 0; }
+    .toc-box ul { list-style: none; padding-left: 0; margin: 0; }
+    .toc-box li { margin-bottom: 0.5rem; }
+    .toc-box a { color: var(--color-primary); text-decoration: none; font-weight: 600; }
+    .toc-box a:hover { text-decoration: underline; }
+    .formula-card { background: rgba(0, 196, 140, 0.08); border-left: 4px solid var(--color-accent); padding: 1.25rem; margin: 1.5rem 0; border-radius: 4px; font-family: monospace; font-size: 1.05rem; }
+  </style>
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://policyguideusa.com/guide-high-vs-low-insurance-deductible.html#article",
+        "headline": "High vs. Low Insurance Deductibles: How to Calculate Your Optimal Sweet Spot ($500 vs $1,000)",
+        "description": "Comprehensive guide on auto and home insurance deductibles, mathematical break-even payback calculation, and risk assessment.",
+        "datePublished": "2026-09-18T08:00:00+00:00",
+        "dateModified": "2026-09-18T08:00:00+00:00",
+        "author": {
+          "@type": "Organization",
+          "name": "PolicyGuide US Underwriting Editorial Board"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "PolicyGuide USA",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://policyguideusa.com/assets/images/policyguide-logo.svg"
+          }
+        },
+        "mainEntityOfPage": "https://policyguideusa.com/guide-high-vs-low-insurance-deductible.html"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://policyguideusa.com/guide-high-vs-low-insurance-deductible.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much do you save by increasing your car insurance deductible from $500 to $1,000?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Raising your collision and comprehensive deductible from $500 to $1,000 lowers physical damage premiums by an average of 12% to 20%, saving $140 to $280 annually depending on vehicle value and location."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the break-even period on a higher insurance deductible?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The break-even period is calculated as the deductible increase ($500) divided by your annual premium savings. If moving to a $1,000 deductible saves $180 per year, your break-even point is 2.7 years. If you go 3 years without a collision claim, you have profited from the higher deductible."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you have different deductibles for collision and comprehensive?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Most insurance companies allow split deductibles. A popular money-saving strategy is carrying a $1,000 deductible on collision (driver fault) while maintaining a lower $250 or $500 deductible on comprehensive (animal hits, cracked glass, hail, theft)."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://policyguideusa.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Articles",
+            "item": "https://policyguideusa.com/blog.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "High vs Low Deductibles",
+            "item": "https://policyguideusa.com/guide-high-vs-low-insurance-deductible.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" id="header-logo" aria-label="PolicyGuide US">
+        <div class="logo-crest">
+          <svg class="logo-crest-svg" viewBox="0 0 48 48" width="44" height="44" fill="none" aria-hidden="true">
+            <defs>
+              <linearGradient id="crestGrad" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#00C48C"/>
+                <stop offset="50%" stop-color="#00A86B"/>
+                <stop offset="100%" stop-color="#0284C7"/>
+              </linearGradient>
+            </defs>
+            <path d="M24 3 C35 3 43 7 45 16 C45 30 32 41 24 45 C16 41 3 30 3 16 C5 7 13 3 24 3 Z" fill="url(#crestGrad)"/>
+            <path d="M16 25 L21 30 L32 19" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="logo-text-group">
+          <div class="logo-title-row">
+            <span class="logo-brand-policy">POLICY</span><span class="logo-brand-guide">GUIDE</span>
+            <span class="logo-badge-us">US</span>
+          </div>
+          <div class="logo-tagline">AMERICA'S INDEPENDENT INSURANCE AUTHORITY</div>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="state-guide.html" class="nav-link">50-State Guides</a></li>
+          <li><a href="city-guide.html" class="nav-link">Metro Guides</a></li>
+          <li><a href="carrier-comparison.html" class="nav-link">Carrier Matchups</a></li>
+          <li class="nav-dropdown">
+            <a href="calculators.html" class="nav-link nav-dropdown-toggle">Tools <span class="nav-dropdown-arrow">▼</span></a>
+            <ul class="nav-dropdown-menu">
+              <li><a href="calculator-auto.html">Auto Insurance Calculator</a></li>
+              <li><a href="calculator-home.html">Home Insurance Calculator</a></li>
+              <li><a href="calculator-deductible.html">Deductible Optimization Tool</a></li>
+              <li><a href="calculator-discounts.html">Discount Eligibility Finder</a></li>
+            </ul>
+          </li>
+          <li><a href="blog.html" class="nav-link active">Articles</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle-btn" id="theme-toggle" title="Toggle Theme"><span id="theme-icon">☀️</span></button>
+        <button class="btn btn-primary btn-sm open-quote-modal">Compare Rates</button>
+        <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Article Header & Breadcrumbs -->
+  <div class="article-page-header">
+    <div class="container">
+      <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> &rsaquo;
+        <a href="blog.html">Articles & Guides</a> &rsaquo;
+        <span class="text-muted">Financial Tactics</span> &rsaquo;
+        <span style="color: var(--color-text-main); font-weight: 600;">High vs Low Deductibles</span>
+      </nav>
+
+      <div style="margin-bottom: 0.75rem;">
+        <span class="badge badge-primary">Mathematical Cost Optimization</span>
+      </div>
+
+      <h1 style="font-size: clamp(2rem, 3.5vw, 2.75rem); line-height: 1.25; margin-bottom: 1.25rem;">
+        High vs. Low Insurance Deductibles: How to Calculate Your Optimal Sweet Spot ($500 vs $1,000)
+      </h1>
+
+      <div class="article-author-card">
+        <div class="author-avatar">📊</div>
+        <div>
+          <div style="font-weight: 700; color: var(--color-text-main);">
+            By PolicyGuide US Editorial & Underwriting Research Team
+          </div>
+          <div style="color: var(--color-text-dim); font-size: 0.8rem; margin-top: 0.2rem;">
+            Actuarial Analysis by Financial Underwriters &bull; Published September 2026 &bull; 7 min read (1,120 words)
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Article Layout -->
+  <div class="container">
+    <div class="article-layout">
+      
+      <!-- Content Column -->
+      <article class="article-main-body article-content">
+        
+        <!-- Key Takeaways Callout -->
+        <div class="key-takeaways-card">
+          <h4>Key Takeaways at a Glance</h4>
+          <ul>
+            <li><strong>The Premium Tradeoff:</strong> Shifting your auto collision deductible from $500 to $1,000 saves an average of 12% to 20% on physical damage premiums ($140 to $280/year).</li>
+            <li><strong>The 3-Year Break-Even Rule:</strong> If the premium savings cover the additional $500 out-of-pocket exposure within 36 months, financial actuaries recommend opting for the higher deductible.</li>
+            <li><strong>Split Deductible Strategy:</strong> Keep comprehensive low ($250 to $500) for cheap windshield and animal claims, while setting collision high ($1,000) for structural damage.</li>
+            <li><strong>Homeowners Percentage Traps:</strong> Be careful with 1% and 2% hurricane or hail deductibles on high-value homes—a 2% deductible on a $600,000 dwelling is a massive $12,000 out-of-pocket obligation.</li>
+          </ul>
+        </div>
+
+        <!-- Table of Contents -->
+        <div class="toc-box">
+          <strong style="font-size: 1.1rem; display: block; margin-bottom: 0.75rem;">Table of Contents</strong>
+          <ul>
+            <li><a href="#how-deductibles-function">1. How Insurance Deductibles Actually Function</a></li>
+            <li><a href="#breakeven-formula">2. The Mathematical Break-Even Formula</a></li>
+            <li><a href="#auto-comparison-table">3. $250 vs $500 vs $1,000 vs $2,000 Deductible Analysis</a></li>
+            <li><a href="#split-deductibles">4. The Hybrid Split-Deductible Strategy (Comp vs Collision)</a></li>
+            <li><a href="#homeowners-pitfalls">5. Homeowners Insurance: Flat Dollar vs Percentage Deductibles</a></li>
+            <li><a href="#decision-matrix">6. 4-Question Decision Matrix for Consumers</a></li>
+            <li><a href="#faqs">7. Frequently Asked Questions</a></li>
+          </ul>
+        </div>
+
+        <p>
+          Your insurance deductible is the pre-agreed dollar amount you must absorb out-of-pocket before your insurance carrier begins disbursing funds on a covered physical property claim. It serves as your personal stake in risk management: by agreeing to shoulder minor losses, you discourage trivial claims and significantly reduce the administrative burden on the insurer.
+        </p>
+        <p>
+          In return, insurance carriers reduce your monthly and annual premiums. However, many drivers and homeowners choose their deductible arbitrarily when first setting up a policy and never revisit it. Understanding the mathematical relationship between deductible brackets and annual premium reductions is one of the quickest ways to reclaim control of your insurance expenses.
+        </p>
+
+        <h2 id="how-deductibles-function">1. How Insurance Deductibles Actually Function</h2>
+        <p>
+          A common misconception among first-time policyholders is that deductibles apply to all insurance claims. <strong>They do not.</strong>
+        </p>
+        <p>
+          Deductibles apply exclusively to first-party physical damage coverages (such as collision and comprehensive on vehicles, or dwelling and personal property on real estate). <strong>Liability claims carry zero deductible.</strong> If you cause a crash that injures another motorist or damages their vehicle, your bodily injury and property damage liability cover the costs up to your policy limits without requiring you to pay a single dollar in deductible upfront.
+        </p>
+
+        <h2 id="breakeven-formula">2. The Mathematical Break-Even Formula</h2>
+        <p>
+          When choosing between a low deductible ($500) and a high deductible ($1,000), you are taking on an additional $500 in financial exposure if an accident occurs. To determine whether this risk is mathematically justified, calculate your <strong>Payback Time Horizon</strong>:
+        </p>
+
+        <div class="formula-card">
+          Break-Even Period (Years) = [ Higher Deductible - Lower Deductible ] ÷ [ Annual Premium Savings ]
+        </div>
+
+        <p>
+          <strong>Practical Example:</strong> Suppose moving your auto collision deductible from $500 to $1,000 reduces your annual policy bill by $180.
+        </p>
+        <ul>
+          <li>Difference in exposure: $1,000 - $500 = <strong>$500</strong>.</li>
+          <li>Annual premium reduction: <strong>$180</strong>.</li>
+          <li>Break-even: $500 ÷ $180 = <strong>2.77 Years (approx 33 months)</strong>.</li>
+        </ul>
+        <p>
+          According to National Highway Traffic Safety Administration (NHTSA) claims data, the average American driver files a collision claim once every 10 to 12 years. If you go 3 years without an at-fault accident, the cumulative premium savings exceed the extra $500 risk, putting you ahead financially every subsequent year.
+        </p>
+
+        <h2 id="auto-comparison-table">3. $250 vs $500 vs $1,000 vs $2,000 Deductible Analysis</h2>
+        <p>
+          Review how premiums and risk scale across typical auto insurance deductible tiers on a standard 2024–2026 model year vehicle:
+        </p>
+
+        <div class="data-table-wrapper">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Deductible Tier</th>
+                <th>Avg Annual Physical Damage Cost</th>
+                <th>Annual Premium Savings</th>
+                <th>Out-of-Pocket Claim Risk</th>
+                <th>Actuarial Recommendation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>$250 Low</strong></td>
+                <td>$1,150</td>
+                <td>$0 (Base)</td>
+                <td>Very Low ($250)</td>
+                <td>Rarely recommended; high premium penalty</td>
+              </tr>
+              <tr>
+                <td><strong>$500 Standard</strong></td>
+                <td>$980</td>
+                <td>$170 saved / year</td>
+                <td>Low ($500)</td>
+                <td>Good for households with limited savings</td>
+              </tr>
+              <tr>
+                <td><strong>$1,000 Optimal</strong></td>
+                <td>$810</td>
+                <td>$340 saved / year</td>
+                <td>Moderate ($1,000)</td>
+                <td><strong>Best Sweet Spot</strong> for drivers with $1k+ savings</td>
+              </tr>
+              <tr>
+                <td><strong>$2,000 High</strong></td>
+                <td>$740</td>
+                <td>$410 saved / year</td>
+                <td>High ($2,000)</td>
+                <td>Diminishing returns; only saves $70 more than $1k</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          Notice the law of diminishing returns between $1,000 and $2,000. Moving from $500 to $1,000 saves an impressive $170/year, but doubling the risk again from $1,000 to $2,000 saves only an additional $70/year. For most consumers, the $1,000 tier represents the mathematical peak.
+        </p>
+
+        <h2 id="split-deductibles">4. The Hybrid Split-Deductible Strategy (Comp vs Collision)</h2>
+        <p>
+          Many insurance buyers do not realize they can select asymmetric deductibles for comprehensive and collision coverage:
+        </p>
+        <ul>
+          <li><strong>Set Collision at $1,000:</strong> Collision coverage is by far the most expensive component of physical damage insurance. Raising it produces the largest dollar savings.</li>
+          <li><strong>Keep Comprehensive at $250 or $500:</strong> Comprehensive covers uncontrollable external events: cracked windshields, hail dents, rock strikes, hitting a deer, or stolen catalytic converters. Comprehensive is cheap to underwrite; lowering your comprehensive deductible from $1,000 down to $250 typically costs only $25 to $40 per year.</li>
+        </ul>
+
+        <h2 id="homeowners-pitfalls">5. Homeowners Insurance: Flat Dollar vs Percentage Deductibles</h2>
+        <p>
+          In homeowners insurance, deductibles are structured differently. Most policies feature a standard flat deductible ($1,000, $1,500, or $2,500) for standard perils such as kitchen fires, burst pipes, and theft.
+        </p>
+        <p>
+          However, in storm-prone coastal and plain states (Texas, Florida, North Carolina, Oklahoma), policies often carry mandatory <strong>Percentage Deductibles (1%, 2%, or 5%)</strong> for Wind/Hail or Named Hurricanes. This percentage applies to your total <strong>Coverage A (Dwelling)</strong> limit, not the repair bill:
+        </p>
+        <ul>
+          <li>Dwelling Replacement Limit: $500,000</li>
+          <li>2% Named Hurricane Deductible = <strong>$10,000 Out-of-Pocket</strong></li>
+        </ul>
+        <p>
+          Before increasing your property deductible to lower premiums, always verify whether your policy specifies a flat dollar fee or a percentage-based clause.
+        </p>
+
+        <h2 id="decision-matrix">6. 4-Question Decision Matrix for Consumers</h2>
+        <ol>
+          <li><strong>Do you possess at least $1,000 in liquid emergency cash right now?</strong> If yes, you should immediately raise your auto collision deductible to $1,000 and bank the premium savings.</li>
+          <li><strong>Does your auto lender allow a $1,000 deductible?</strong> Some auto finance contracts restrict maximum deductibles to $500. Review your loan agreement before requesting a change.</li>
+          <li><strong>What is your vehicle's total market value?</strong> If your vehicle is only worth $2,500, a $1,000 deductible means the insurer's maximum liability payout is just $1,500. It may be time to drop collision entirely.</li>
+          <li><strong>Have you run the simulation in our calculator?</strong> Check your potential savings using our <a href="calculator-deductible.html">Interactive Deductible Break-Even Tool</a>.</li>
+        </ol>
+
+        <!-- Interactive Quote CTA Box -->
+        <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 2rem; margin: 3rem 0; text-align: center;">
+          <span class="badge badge-success" style="margin-bottom: 0.5rem;">Interactive Rate Audit</span>
+          <h3 style="margin: 0.5rem 0 0.75rem;">Simulate Deductible Savings in Your Area</h3>
+          <p style="max-width: 550px; margin: 0 auto 1.5rem; font-size: 0.95rem;">
+            Compare instant rates at $500 vs $1,000 deductibles across Progressive, State Farm, GEICO, and Allstate.
+          </p>
+          <div style="display: flex; justify-content: center; gap: 0.75rem; max-width: 450px; margin: 0 auto; flex-wrap: wrap;">
+            <input type="text" id="inline-zip" class="form-control" placeholder="Enter 5-digit ZIP" style="width: 170px; text-align: center; font-weight: 700;" maxlength="5">
+            <button class="btn btn-primary open-quote-modal" onclick="transferInlineZip()">Check Deductible Rates &rarr;</button>
+          </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <section id="faqs" style="margin-top: 3rem;">
+          <h2 style="margin-bottom: 1.5rem;">Frequently Asked Questions (FAQ)</h2>
+
+          <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1.5rem; margin-bottom: 1.25rem;">
+            <h3 style="color: var(--color-accent); font-size: 1.15rem; margin-top: 0;">How much do you save by increasing your car insurance deductible from $500 to $1,000?</h3>
+            <p style="margin-bottom: 0;">
+              Switching from a $500 to a $1,000 deductible reduces comprehensive and collision premiums by an average of 12% to 20%, generating between $140 and $280 in annual savings for most passenger vehicle policies.
+            </p>
+          </div>
+
+          <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1.5rem; margin-bottom: 1.25rem;">
+            <h3 style="color: var(--color-accent); font-size: 1.15rem; margin-top: 0;">Do I have to pay my deductible if the accident was not my fault?</h3>
+            <p style="margin-bottom: 0;">
+              If another driver is clearly at fault and their insurance accepts liability, their property damage liability pays for your repairs with no deductible required. If you file through your own collision coverage for speedier service, you pay your deductible upfront, and your carrier recoups and refunds it through subrogation.
+            </p>
+          </div>
+
+          <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1.5rem; margin-bottom: 1.25rem;">
+            <h3 style="color: var(--color-accent); font-size: 1.15rem; margin-top: 0;">Does a higher deductible affect windshield replacement claims?</h3>
+            <p style="margin-bottom: 0;">
+              In several states (such as Florida, South Carolina, and Kentucky), state laws mandate zero-deductible windshield replacement under comprehensive coverage. In other states, windshield claims are subject to your comprehensive deductible unless you purchase a specific $0 glass endorsement.
+            </p>
+          </div>
+        </section>
+
+      </article>
+
+      <!-- Sidebar -->
+      <aside class="sidebar-sticky-box">
+        <div class="sidebar-card">
+          <h4 style="margin-bottom: 0.75rem;">Deductible Calculator</h4>
+          <p style="font-size: 0.85rem; margin-bottom: 1rem;">
+            Find your exact break-even timeline in seconds.
+          </p>
+          <a href="calculator-deductible.html" class="btn btn-primary btn-sm btn-block">Launch Deductible Tool</a>
+        </div>
+
+        <div class="sidebar-card">
+          <h4 style="margin-bottom: 1rem;">Helpful Calculators</h4>
+          <ul class="footer-links" style="font-size: 0.88rem; line-height: 1.6;">
+            <li><a href="calculator-deductible.html">Interactive Break-Even Tool</a></li>
+            <li><a href="calculator-auto.html">Auto Premium Estimator</a></li>
+            <li><a href="calculator-discounts.html">Discount Finder (15+ Items)</a></li>
+            <li><a href="guide-how-much-car-insurance-do-i-need.html">How Much Insurance Do I Need?</a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+
+  <!-- Lead Capture Modal -->
+  <div class="modal-overlay hidden" id="quote-modal" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="close-modal-btn">✕</button>
+      <div id="modal-dynamic-content">
+        <h3 id="modal-title" style="margin-bottom: 0.5rem;">Compare Deductible Options</h3>
+        <p style="font-size: 0.9rem; margin-bottom: 1.5rem;">See instant quotes with $500 vs $1,000 deductibles.</p>
+        <form id="lead-quote-form">
+          <input type="hidden" id="modal-carrier-name" value="All Major Carriers">
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <label for="modal-zip">Your US ZIP Code:</label>
+            <input type="text" id="modal-zip" class="form-control" placeholder="e.g. 90210" required maxlength="5">
+          </div>
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <label for="modal-coverage-type">Coverage Needed:</label>
+            <select id="modal-coverage-type" class="form-control">
+              <option value="Auto Insurance ($1000 Deductible)">Auto ($1,000 Deductible - Lower Premium)</option>
+              <option value="Auto Insurance ($500 Deductible)">Auto ($500 Deductible - Standard)</option>
+              <option value="Home & Auto Bundle">Home + Auto Multi-Policy</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Find Matching Rates &rarr;</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; 2026 PolicyGuide USA. Authoritative US Insurance Intelligence.</div>
+        <div>
+          <a href="about.html">About Us</a> | 
+          <a href="editorial-standards.html">Editorial Standards</a> | 
+          <a href="privacy.html">Privacy Policy</a> | 
+          <a href="terms.html">Terms of Use</a> | 
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js" defer></script>
+  <script src="js/address-intelligence.js" defer></script>
+  <script src="js/calculators.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <script>
+    function transferInlineZip() {
+      const val = document.getElementById('inline-zip').value.trim();
+      if (val.length === 5) {
+        document.getElementById('modal-zip').value = val;
+      }
+    }
+  </script>
+</body>
+</html>

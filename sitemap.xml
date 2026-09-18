@@ -59,6 +59,68 @@
     <priority>0.75</priority>
   </url>
 
+  <!-- 10 Comprehensive 2026 Insurance Pillar Guides -->
+  <url>
+    <loc>https://policyguideusa.com/guide-how-much-car-insurance-do-i-need.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://policyguideusa.com/guide-home-and-auto-insurance-bundle.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://policyguideusa.com/guide-high-vs-low-insurance-deductible.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://policyguideusa.com/guide-cheap-car-insurance-for-teens.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://policyguideusa.com/guide-how-to-lower-car-insurance.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://policyguideusa.com/guide-actual-cash-value-vs-replacement-cost.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://policyguideusa.com/guide-credit-score-car-insurance-impact.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://policyguideusa.com/guide-penalties-for-driving-without-insurance.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://policyguideusa.com/guide-telematics-usage-based-insurance.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://policyguideusa.com/guide-gap-insurance-explained.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
   <!-- About Us -->
   <url>
     <loc>https://policyguideusa.com/about.html</loc>
