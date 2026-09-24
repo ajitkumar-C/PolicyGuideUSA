@@ -849,9 +849,13 @@ function initBlog() {
         return;
       }
 
-      blogContainer.innerHTML = filtered.map(post => `
-        <div class="blog-card" onclick="window.location.href='article.html#${encodeURIComponent(post.id)}'">
+      blogContainer.innerHTML = filtered.map(post => {
+        const targetUrl = post.guideUrl || `article.html#${encodeURIComponent(post.id)}`;
+        const imageTag = post.image ? `<img src="${post.image}" class="blog-card-image" alt="${post.title}" loading="lazy">` : '';
+        return `
+        <div class="blog-card" onclick="window.location.href='${targetUrl}'">
           <div>
+            ${imageTag}
             <div class="blog-meta-top">
               <span class="badge badge-primary">${post.category}</span>
               <span class="text-dim">⏱ ${post.readTime}</span>
@@ -861,10 +865,11 @@ function initBlog() {
           </div>
           <div class="blog-card-footer">
             <span>📅 ${post.publishDate}</span>
-            <a href="article.html#${encodeURIComponent(post.id)}" class="link-arrow" style="font-weight:700; color:var(--color-primary);">Read Full Guide &rarr;</a>
+            <a href="${targetUrl}" class="link-arrow" style="font-weight:700; color:var(--color-primary);">Read Full Guide &rarr;</a>
           </div>
         </div>
-      `).join('');
+      `;
+      }).join('');
     }
 
     if (searchInput) searchInput.addEventListener('input', renderBlogPosts);
@@ -884,9 +889,13 @@ function initBlog() {
   // Render top 6 featured guides on homepage (index.html)
   if (homeBlogContainer) {
     const featured = INSURANCE_BLOG_POSTS.slice(0, 6);
-    homeBlogContainer.innerHTML = featured.map(post => `
-      <div class="blog-card" onclick="window.location.href='article.html#${encodeURIComponent(post.id)}'">
+    homeBlogContainer.innerHTML = featured.map(post => {
+      const targetUrl = post.guideUrl || `article.html#${encodeURIComponent(post.id)}`;
+      const imageTag = post.image ? `<img src="${post.image}" class="blog-card-image" alt="${post.title}" loading="lazy">` : '';
+      return `
+      <div class="blog-card" onclick="window.location.href='${targetUrl}'">
         <div>
+          ${imageTag}
           <div class="blog-meta-top">
             <span class="badge badge-primary">${post.category}</span>
             <span class="text-dim">⏱ ${post.readTime}</span>
@@ -896,10 +905,11 @@ function initBlog() {
         </div>
         <div class="blog-card-footer">
           <span>📅 ${post.publishDate}</span>
-          <a href="article.html#${encodeURIComponent(post.id)}" class="link-arrow" style="font-weight:700; color:var(--color-primary);">Read Full Guide &rarr;</a>
+          <a href="${targetUrl}" class="link-arrow" style="font-weight:700; color:var(--color-primary);">Read Full Guide &rarr;</a>
         </div>
       </div>
-    `).join('');
+    `;
+    }).join('');
   }
 }
 
