@@ -1935,7 +1935,7 @@ function generateGuideHtml(guide) {
   <!-- Header Navigation -->
   <header class="header">
     <div class="container header-inner">
-      <a href="index.html" class="logo" id="header-logo" aria-label="PolicyGuide US">
+      <a href="/" class="logo" id="header-logo" aria-label="PolicyGuide US">
         <div class="logo-crest">
           <svg class="logo-crest-svg" viewBox="0 0 48 48" width="44" height="44" fill="none" aria-hidden="true">
             <defs>
@@ -1966,7 +1966,7 @@ function generateGuideHtml(guide) {
 
       <nav>
         <ul class="nav-links" id="nav-links">
-          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="/" class="nav-link">Home</a></li>
           <li><a href="state-guide.html" class="nav-link">50-State Guides</a></li>
           <li><a href="city-guide.html" class="nav-link">Metro Guides</a></li>
           <li><a href="carrier-comparison.html" class="nav-link">Carrier Matchups</a></li>
@@ -2001,7 +2001,7 @@ function generateGuideHtml(guide) {
   <div class="article-page-header">
     <div class="container">
       <nav class="breadcrumb-nav" aria-label="Breadcrumb">
-        <a href="index.html">Home</a> &rsaquo;
+        <a href="/">Home</a> &rsaquo;
         <a href="blog.html">Articles & Guides</a> &rsaquo;
         <span class="text-muted">${guide.category}</span> &rsaquo;
         <span style="color: var(--color-text-main); font-weight: 600;">${guide.title.split(':')[0]}</span>
