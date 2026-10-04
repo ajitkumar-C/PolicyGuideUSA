@@ -7,7 +7,7 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 
-const API_KEY = '099c39fd8bfc4851b05ad0e1eb5d35bc';
+const API_KEY = 'ad420b0ba74342998fc5d5d8300821d6';
 const HOST = 'policyguideusa.com';
 const KEY_LOCATION = `https://${HOST}/${API_KEY}.txt`;
 const SITEMAP_PATH = path.join(__dirname, '..', 'sitemap.xml');
@@ -79,7 +79,7 @@ async function submitToIndexNow(urls) {
   }
 
   console.log('\n🏁 Submission completed.');
-  console.log('💡 Note: Ensure your live deployment has 099c39fd8bfc4851b05ad0e1eb5d35bc.txt uploaded at https://policyguideusa.com/099c39fd8bfc4851b05ad0e1eb5d35bc.txt so Bing can verify domain ownership.');
+  console.log(`💡 Note: Ensure your live deployment has ${API_KEY}.txt uploaded at https://${HOST}/${API_KEY}.txt so Bing can verify domain ownership.`);
 }
 
 function run() {
