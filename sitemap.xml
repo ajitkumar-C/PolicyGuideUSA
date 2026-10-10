@@ -13,7 +13,7 @@
 
   <!-- 50-State Statutory Guides -->
   <url>
-    <loc>https://policyguideusa.com/state-guide.html</loc>
+    <loc>https://policyguideusa.com/state-guide</loc>
     <lastmod>2026-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -21,7 +21,7 @@
 
   <!-- Metro & City Insurance Guides -->
   <url>
-    <loc>https://policyguideusa.com/city-guide.html</loc>
+    <loc>https://policyguideusa.com/city-guide</loc>
     <lastmod>2026-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -29,7 +29,7 @@
 
   <!-- Head-to-Head Carrier Comparison -->
   <url>
-    <loc>https://policyguideusa.com/carrier-comparison.html</loc>
+    <loc>https://policyguideusa.com/carrier-comparison</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -37,31 +37,31 @@
 
   <!-- 2026 Carrier In-Depth Audits & Reviews -->
   <url>
-    <loc>https://policyguideusa.com/carrier-progressive-insurance-review.html</loc>
+    <loc>https://policyguideusa.com/carrier-progressive-insurance-review</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/carrier-state-farm-insurance-review.html</loc>
+    <loc>https://policyguideusa.com/carrier-state-farm-insurance-review</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/carrier-geico-insurance-review.html</loc>
+    <loc>https://policyguideusa.com/carrier-geico-insurance-review</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/carrier-allstate-insurance-review.html</loc>
+    <loc>https://policyguideusa.com/carrier-allstate-insurance-review</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/carrier-aaa-auto-club-insurance-review.html</loc>
+    <loc>https://policyguideusa.com/carrier-aaa-auto-club-insurance-review</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -69,61 +69,61 @@
 
   <!-- Calculators & Interactive Audit Checklists -->
   <url>
-    <loc>https://policyguideusa.com/calculators.html</loc>
+    <loc>https://policyguideusa.com/calculators</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/calculator-home.html</loc>
+    <loc>https://policyguideusa.com/calculator-home</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/calculator-life.html</loc>
+    <loc>https://policyguideusa.com/calculator-life</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/calculator-auto.html</loc>
+    <loc>https://policyguideusa.com/calculator-auto</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/calculator-health.html</loc>
+    <loc>https://policyguideusa.com/calculator-health</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/calculator-renters.html</loc>
+    <loc>https://policyguideusa.com/calculator-renters</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/calculator-deductible.html</loc>
+    <loc>https://policyguideusa.com/calculator-deductible</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/calculator-business.html</loc>
+    <loc>https://policyguideusa.com/calculator-business</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/calculator-travel.html</loc>
+    <loc>https://policyguideusa.com/calculator-travel</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/calculator-pet.html</loc>
+    <loc>https://policyguideusa.com/calculator-pet</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -131,7 +131,7 @@
 
   <!-- Educational Blog & Knowledge Base -->
   <url>
-    <loc>https://policyguideusa.com/blog.html</loc>
+    <loc>https://policyguideusa.com/blog</loc>
     <lastmod>2026-09-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -139,7 +139,7 @@
 
   <!-- In-Depth Regulatory Article -->
   <url>
-    <loc>https://policyguideusa.com/article.html</loc>
+    <loc>https://policyguideusa.com/article</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
@@ -147,61 +147,61 @@
 
   <!-- 10 Comprehensive 2026 Insurance Pillar Guides -->
   <url>
-    <loc>https://policyguideusa.com/guide-how-much-car-insurance-do-i-need.html</loc>
+    <loc>https://policyguideusa.com/guide-how-much-car-insurance-do-i-need</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-home-and-auto-insurance-bundle.html</loc>
+    <loc>https://policyguideusa.com/guide-home-and-auto-insurance-bundle</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-high-vs-low-insurance-deductible.html</loc>
+    <loc>https://policyguideusa.com/guide-high-vs-low-insurance-deductible</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-cheap-car-insurance-for-teens.html</loc>
+    <loc>https://policyguideusa.com/guide-cheap-car-insurance-for-teens</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-how-to-lower-car-insurance.html</loc>
+    <loc>https://policyguideusa.com/guide-how-to-lower-car-insurance</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-actual-cash-value-vs-replacement-cost.html</loc>
+    <loc>https://policyguideusa.com/guide-actual-cash-value-vs-replacement-cost</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-credit-score-car-insurance-impact.html</loc>
+    <loc>https://policyguideusa.com/guide-credit-score-car-insurance-impact</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-penalties-for-driving-without-insurance.html</loc>
+    <loc>https://policyguideusa.com/guide-penalties-for-driving-without-insurance</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-telematics-usage-based-insurance.html</loc>
+    <loc>https://policyguideusa.com/guide-telematics-usage-based-insurance</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-gap-insurance-explained.html</loc>
+    <loc>https://policyguideusa.com/guide-gap-insurance-explained</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -209,181 +209,181 @@
 
   <!-- 20 In-Depth 2026 Insurance Authority Pillar Guides -->
   <url>
-    <loc>https://policyguideusa.com/guide-ev-electric-vehicle-insurance.html</loc>
+    <loc>https://policyguideusa.com/guide-ev-electric-vehicle-insurance</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-ai-aerial-drone-roof-inspection.html</loc>
+    <loc>https://policyguideusa.com/guide-ai-aerial-drone-roof-inspection</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-california-fair-plan-home-insurance.html</loc>
+    <loc>https://policyguideusa.com/guide-california-fair-plan-home-insurance</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-why-home-insurance-rates-increase.html</loc>
+    <loc>https://policyguideusa.com/guide-why-home-insurance-rates-increase</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-car-makers-selling-driving-data.html</loc>
+    <loc>https://policyguideusa.com/guide-car-makers-selling-driving-data</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-uninsured-underinsured-motorist-coverage.html</loc>
+    <loc>https://policyguideusa.com/guide-uninsured-underinsured-motorist-coverage</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-comprehensive-vs-collision-insurance.html</loc>
+    <loc>https://policyguideusa.com/guide-comprehensive-vs-collision-insurance</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-diminished-value-insurance-claim.html</loc>
+    <loc>https://policyguideusa.com/guide-diminished-value-insurance-claim</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-personal-umbrella-insurance-guide.html</loc>
+    <loc>https://policyguideusa.com/guide-personal-umbrella-insurance-guide</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-water-backup-vs-flood-insurance.html</loc>
+    <loc>https://policyguideusa.com/guide-water-backup-vs-flood-insurance</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-sr22-insurance-filing-costs.html</loc>
+    <loc>https://policyguideusa.com/guide-sr22-insurance-filing-costs</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-renters-insurance-bundling-hack.html</loc>
+    <loc>https://policyguideusa.com/guide-renters-insurance-bundling-hack</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-pay-per-mile-car-insurance.html</loc>
+    <loc>https://policyguideusa.com/guide-pay-per-mile-car-insurance</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-commercial-general-liability-insurance.html</loc>
+    <loc>https://policyguideusa.com/guide-commercial-general-liability-insurance</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-business-owners-policy-bop.html</loc>
+    <loc>https://policyguideusa.com/guide-business-owners-policy-bop</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-pet-insurance-buying-guide.html</loc>
+    <loc>https://policyguideusa.com/guide-pet-insurance-buying-guide</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-term-vs-whole-life-insurance.html</loc>
+    <loc>https://policyguideusa.com/guide-term-vs-whole-life-insurance</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-hdhp-vs-ppo-health-insurance-hsa.html</loc>
+    <loc>https://policyguideusa.com/guide-hdhp-vs-ppo-health-insurance-hsa</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-what-to-do-after-car-accident.html</loc>
+    <loc>https://policyguideusa.com/guide-what-to-do-after-car-accident</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-first-time-homebuyer-insurance.html</loc>
+    <loc>https://policyguideusa.com/guide-first-time-homebuyer-insurance</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-florida-citizens-property-insurance-depopulation.html</loc>
+    <loc>https://policyguideusa.com/guide-florida-citizens-property-insurance-depopulation</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-rideshare-uber-lyft-delivery-insurance.html</loc>
+    <loc>https://policyguideusa.com/guide-rideshare-uber-lyft-delivery-insurance</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-airbnb-short-term-rental-insurance.html</loc>
+    <loc>https://policyguideusa.com/guide-airbnb-short-term-rental-insurance</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-fema-risk-rating-private-flood-insurance.html</loc>
+    <loc>https://policyguideusa.com/guide-fema-risk-rating-private-flood-insurance</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-adas-sensors-car-insurance-repair-costs.html</loc>
+    <loc>https://policyguideusa.com/guide-adas-sensors-car-insurance-repair-costs</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-small-business-cyber-insurance-ransomware.html</loc>
+    <loc>https://policyguideusa.com/guide-small-business-cyber-insurance-ransomware</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-life-insurance-living-benefits-riders.html</loc>
+    <loc>https://policyguideusa.com/guide-life-insurance-living-benefits-riders</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-glp1-ozempic-wegovy-health-insurance-coverage.html</loc>
+    <loc>https://policyguideusa.com/guide-glp1-ozempic-wegovy-health-insurance-coverage</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-classic-collector-car-agreed-value-insurance.html</loc>
+    <loc>https://policyguideusa.com/guide-classic-collector-car-agreed-value-insurance</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://policyguideusa.com/guide-percentage-catastrophe-hurricane-hail-deductible.html</loc>
+    <loc>https://policyguideusa.com/guide-percentage-catastrophe-hurricane-hail-deductible</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -391,7 +391,7 @@
 
   <!-- About Us -->
   <url>
-    <loc>https://policyguideusa.com/about.html</loc>
+    <loc>https://policyguideusa.com/about</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -399,7 +399,7 @@
 
   <!-- Editorial Standards & Methodology -->
   <url>
-    <loc>https://policyguideusa.com/editorial-standards.html</loc>
+    <loc>https://policyguideusa.com/editorial-standards</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -407,7 +407,7 @@
 
   <!-- Privacy Policy -->
   <url>
-    <loc>https://policyguideusa.com/privacy.html</loc>
+    <loc>https://policyguideusa.com/privacy</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -415,7 +415,7 @@
 
   <!-- Terms of Use -->
   <url>
-    <loc>https://policyguideusa.com/terms.html</loc>
+    <loc>https://policyguideusa.com/terms</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -423,10 +423,102 @@
 
   <!-- Contact Us -->
   <url>
-    <loc>https://policyguideusa.com/contact.html</loc>
+    <loc>https://policyguideusa.com/contact</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
+
+  <!-- 2026 Carrier In-Depth Audits & Matchups (Batch 2) -->
+  <url>
+    <loc>https://policyguideusa.com/carrier-travelers-insurance-review</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://policyguideusa.com/carrier-nationwide-insurance-review</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://policyguideusa.com/carrier-liberty-mutual-insurance-review</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://policyguideusa.com/carrier-farmers-insurance-review</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://policyguideusa.com/carrier-usaa-insurance-review</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://policyguideusa.com/carrier-american-family-insurance-review</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://policyguideusa.com/carrier-erie-insurance-review</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://policyguideusa.com/carrier-chubb-insurance-review</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://policyguideusa.com/carrier-state-farm-vs-progressive</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://policyguideusa.com/carrier-geico-vs-progressive</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://policyguideusa.com/carrier-state-farm-vs-allstate</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://policyguideusa.com/carrier-aaa-vs-state-farm</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://policyguideusa.com/carrier-geico-vs-state-farm</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://policyguideusa.com/carrier-cheapest-property-casualty-insurance</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://policyguideusa.com/guide-how-to-switch-insurance-companies</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset>

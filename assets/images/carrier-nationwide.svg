@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+    <defs>
+      <linearGradient id="bgNW" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#0F172A"/>
+        <stop offset="50%" stop-color="#1E3A8A"/>
+        <stop offset="100%" stop-color="#0284C7"/>
+      </linearGradient>
+      <linearGradient id="cardNW" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#1E293B" stop-opacity="0.95"/>
+        <stop offset="100%" stop-color="#0F172A" stop-opacity="0.98"/>
+      </linearGradient>
+    </defs>
+    <rect width="1200" height="675" fill="url(#bgNW)"/>
+    <circle cx="1030" cy="170" r="280" fill="#38BDF8" opacity="0.16"/>
+    <g transform="translate(100, 100)">
+      <rect x="0" y="0" width="1000" height="475" rx="20" fill="url(#cardNW)" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+      <rect x="40" y="40" width="280" height="38" rx="8" fill="rgba(56, 189, 248, 0.15)"/>
+      <text x="55" y="65" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="16" font-weight="700" fill="#38BDF8" letter-spacing="1.5">CARRIER AUDIT 2026</text>
+      <text x="40" y="130" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="44" font-weight="800" fill="#F8FAFC">Nationwide P&amp;C Review</text>
+      <text x="40" y="175" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="22" font-weight="500" fill="#94A3B8">Vanishing Deductible, SmartMiles Pay-Per-Mile &amp; On Your Side Claims</text>
+      <line x1="40" y1="215" x2="960" y2="215" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+      <g transform="translate(40, 245)">
+        <rect x="0" y="0" width="280" height="170" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(56,189,248,0.25)"/>
+        <text x="25" y="45" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="18" font-weight="700" fill="#38BDF8">📉 Vanishing Ded</text>
+        <text x="25" y="85" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="28" font-weight="800" fill="#F8FAFC">-$100 / yr</text>
+        <text x="25" y="125" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="14" fill="#94A3B8">Shrinks deductible down to $0</text>
+      </g>
+      <g transform="translate(345, 245)">
+        <rect x="0" y="0" width="280" height="170" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(52,211,153,0.25)"/>
+        <text x="25" y="45" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="18" font-weight="700" fill="#34D399">🚗 SmartMiles</text>
+        <text x="25" y="85" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="28" font-weight="800" fill="#F8FAFC">Pay-Per-Mile</text>
+        <text x="25" y="125" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="14" fill="#94A3B8">Ideal for remote workers &amp; low mileage</text>
+      </g>
+      <g transform="translate(650, 245)">
+        <rect x="0" y="0" width="280" height="170" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(244,114,182,0.25)"/>
+        <text x="25" y="45" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="18" font-weight="700" fill="#F472B6">🤝 On Your Side</text>
+        <text x="25" y="85" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="28" font-weight="800" fill="#F8FAFC">Annual Review</text>
+        <text x="25" y="125" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="14" fill="#94A3B8">Free comprehensive coverage audit</text>
+      </g>
+    </g>
+  </svg>
