@@ -153,9 +153,9 @@
     [data-theme="light"] .nav-dropdown-menu li a:hover { background: #F1F5F9 !important; color: #0284C7 !important; }
 
     /* Critical Article Layout & Responsive Media */
-    .article-layout { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 2.5rem; padding: 2.5rem 0 4rem; align-items: start; }
+    .article-layout { display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 2.5rem; padding: 2.5rem 0 4rem; align-items: start; }
     .article-main-body { min-width: 0; max-width: 100%; font-size: 1.08rem; line-height: 1.8; color: var(--color-text-main); }
-    .article-sidebar { min-width: 0; width: 100%; display: flex; flex-direction: column; gap: 1.5rem; position: sticky; top: 95px; }
+    .article-sidebar { min-width: 0; width: 100%; display: flex; flex-direction: column; gap: 1.5rem; position: sticky; top: 90px; }
     .hero-article-image-box { margin: 1.75rem 0 2.25rem; border-radius: 12px; overflow: hidden; border: 1px solid var(--color-border); box-shadow: var(--shadow-md); max-width: 100%; }
     .hero-article-image-box img { width: 100% !important; max-width: 100% !important; height: auto !important; display: block; object-fit: cover; }
     .hero-article-caption { font-size: 0.85rem; color: var(--color-text-dim); padding: 0.6rem 1rem; background: var(--color-surface); border-top: 1px solid var(--color-border); }
@@ -215,7 +215,7 @@
 
   <!-- Hero Header -->
   <div class="hero" style="padding: 3.5rem 0 2rem; background: linear-gradient(180deg, rgba(15, 23, 42, 0.8) 0%, var(--color-bg) 100%);">
-    <div class="container" style="max-width: 1050px;">
+    <div class="container" style="max-width: 1260px;">
       <div style="display: flex; gap: 0.75rem; align-items: center; margin-bottom: 1rem; flex-wrap: wrap;">
         <span class="badge badge-primary">Carrier Audit 2026</span>
         <span style="font-size: 0.85rem; color: var(--color-text-dim);">&bull;</span>
@@ -228,14 +228,14 @@
       <h1 style="font-size: clamp(1.85rem, 3.5vw, 2.75rem); line-height: 1.25; margin-bottom: 1.25rem;">
         Nationwide Insurance Review (2026): Rates, SmartMiles Pay-Per-Mile & Vanishing Deductible
       </h1>
-      <p style="font-size: 1.15rem; color: var(--color-text-muted); max-width: 860px; margin-bottom: 0;">
+      <p style="font-size: 1.15rem; color: var(--color-text-muted); max-width: 1000px; margin-bottom: 0;">
         2026 Nationwide Insurance Review. Analyze auto and homeowners pricing, SmartMiles telematics for low-mileage drivers, Vanishing Deductible, and claims performance.
       </p>
     </div>
   </div>
 
   <!-- Main Content Layout -->
-  <div class="container" style="max-width: 1050px;">
+  <div class="container" style="max-width: 1260px;">
     <div class="article-layout">
 
       <!-- Main Body Column -->
@@ -438,6 +438,44 @@
           <h4>Carrier Matchup Tool</h4>
           <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 1rem;">Compare Progressive, State Farm, GEICO, and Allstate side-by-side.</p>
           <a href="/carrier-comparison" class="btn btn-primary btn-block" style="text-align: center; text-decoration: none;">Explore Carrier Matchups &rarr;</a>
+        </div>
+
+        <!-- Quick ZIP Rate Checker -->
+        <div class="sidebar-card" style="background: linear-gradient(135deg, rgba(56, 189, 248, 0.08) 0%, rgba(15, 23, 42, 0.4) 100%); border: 1px solid var(--color-primary);">
+          <h4 style="margin-bottom: 0.5rem; color: var(--color-text-main);">📍 Check Your Area Rates</h4>
+          <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 0.85rem;">Instantly check state-regulated base rates and local premium averages in your ZIP code.</p>
+          <div style="display: flex; gap: 0.5rem;">
+            <input type="text" id="inline-sidebar-zip" class="form-control" placeholder="ZIP (e.g. 90210)" maxlength="5" style="width: 130px; font-weight: 700;">
+            <button class="btn btn-primary btn-sm" onclick="openModal()" style="flex: 1; padding: 0.55rem 0.75rem; white-space: nowrap;">Check Rates &rarr;</button>
+          </div>
+        </div>
+
+        <!-- 2026 National Rate Benchmark Card -->
+        <div class="sidebar-card">
+          <h4 style="margin-bottom: 0.75rem;">2026 Carrier Benchmarks</h4>
+          <div style="display: flex; flex-direction: column; gap: 0.65rem; font-size: 0.88rem;">
+            <div style="display: flex; justify-content: space-between; padding-bottom: 0.4rem; border-bottom: 1px solid var(--color-border);">
+              <span><strong>USAA</strong> (Military)</span>
+              <span style="color: #10B981; font-weight: 700;">$132 / mo</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding-bottom: 0.4rem; border-bottom: 1px solid var(--color-border);">
+              <span><strong>Erie</strong> (12 States)</span>
+              <span style="color: #10B981; font-weight: 700;">$133 / mo</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding-bottom: 0.4rem; border-bottom: 1px solid var(--color-border);">
+              <span><strong>GEICO</strong> (Clean Auto)</span>
+              <span style="color: #38BDF8; font-weight: 700;">$165 / mo</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding-bottom: 0.4rem; border-bottom: 1px solid var(--color-border);">
+              <span><strong>State Farm</strong> (Bundles)</span>
+              <span style="color: #38BDF8; font-weight: 700;">$173 / mo</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding-bottom: 0.4rem; border-bottom: 1px solid var(--color-border);">
+              <span><strong>Progressive</strong> (Tickets)</span>
+              <span style="color: #38BDF8; font-weight: 700;">$179 / mo</span>
+            </div>
+          </div>
+          <a href="/carrier-cheapest-property-casualty-insurance" style="display: block; margin-top: 0.85rem; font-size: 0.82rem; color: var(--color-primary); font-weight: 600; text-decoration: none;">View Full 10 Carrier Ranking &rarr;</a>
         </div>
 
         <!-- Editorial Fact Check Card -->

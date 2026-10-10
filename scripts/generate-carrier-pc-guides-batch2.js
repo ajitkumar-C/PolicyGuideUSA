@@ -1581,7 +1581,7 @@ function generateHtml(guide) {
     [data-theme="light"] .nav-dropdown-menu li a:hover { background: #F1F5F9 !important; color: #0284C7 !important; }
 
     /* Critical Article Layout & Responsive Media */
-    .article-layout { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 2.5rem; padding: 2.5rem 0 4rem; align-items: start; }
+    .article-layout { display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 2.5rem; padding: 2.5rem 0 4rem; align-items: start; }
     .article-main-body { min-width: 0; max-width: 100%; font-size: 1.08rem; line-height: 1.8; color: var(--color-text-main); }
     .article-sidebar { min-width: 0; width: 100%; display: flex; flex-direction: column; gap: 1.5rem; position: sticky; top: 95px; }
     .hero-article-image-box { margin: 1.75rem 0 2.25rem; border-radius: 12px; overflow: hidden; border: 1px solid var(--color-border); box-shadow: var(--shadow-md); max-width: 100%; }
@@ -1643,7 +1643,7 @@ function generateHtml(guide) {
 
   <!-- Hero Header -->
   <div class="hero" style="padding: 3.5rem 0 2rem; background: linear-gradient(180deg, rgba(15, 23, 42, 0.8) 0%, var(--color-bg) 100%);">
-    <div class="container" style="max-width: 1050px;">
+    <div class="container" style="max-width: 1260px;">
       <div style="display: flex; gap: 0.75rem; align-items: center; margin-bottom: 1rem; flex-wrap: wrap;">
         <span class="badge badge-primary">${guide.badge}</span>
         <span style="font-size: 0.85rem; color: var(--color-text-dim);">&bull;</span>
@@ -1663,7 +1663,7 @@ function generateHtml(guide) {
   </div>
 
   <!-- Main Content Layout -->
-  <div class="container" style="max-width: 1050px;">
+  <div class="container" style="max-width: 1260px;">
     <div class="article-layout">
 
       <!-- Main Body Column -->
