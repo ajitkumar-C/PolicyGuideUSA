@@ -2333,4 +2333,79 @@ p {
   background: rgba(255, 255, 255, 0.15);
 }
 
+/* ==========================================================================
+   Authoritative Legal & Trademark Disclaimer Box (High Contrast & Legible)
+   ========================================================================== */
+.legal-disclaimer-box {
+  background: var(--color-surface) !important;
+  border: 1px solid var(--color-border) !important;
+  border-left: 4px solid var(--color-accent) !important;
+  padding: 1.5rem 1.75rem !important;
+  border-radius: var(--radius-sm) !important;
+  margin-top: 3.5rem !important;
+  font-size: 0.88rem !important;
+  line-height: 1.7 !important;
+  color: var(--color-text-muted) !important;
+  box-shadow: var(--shadow-sm) !important;
+}
+
+[data-theme="dark"] .legal-disclaimer-box {
+  background: #111E38 !important;
+  border-color: rgba(255, 255, 255, 0.14) !important;
+  border-left-color: #38BDF8 !important;
+  color: #CBD5E1 !important;
+}
+
+[data-theme="dark"] .legal-disclaimer-box p {
+  color: #CBD5E1 !important;
+}
+
+[data-theme="dark"] .legal-disclaimer-box strong {
+  color: #F8FAFC !important;
+}
+
+[data-theme="light"] .legal-disclaimer-box {
+  background: #FFFFFF !important;
+  border-color: rgba(15, 23, 42, 0.14) !important;
+  border-left-color: #0284C7 !important;
+  color: #334155 !important;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06) !important;
+}
+
+[data-theme="light"] .legal-disclaimer-box p {
+  color: #334155 !important;
+}
+
+[data-theme="light"] .legal-disclaimer-box strong {
+  color: #0F172A !important;
+}
+
+.legal-disclaimer-box .legal-header {
+  font-size: 1.05rem !important;
+  font-weight: 800 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  margin-bottom: 0.85rem !important;
+}
+
+[data-theme="dark"] .legal-disclaimer-box .legal-header {
+  color: #F8FAFC !important;
+}
+
+[data-theme="light"] .legal-disclaimer-box .legal-header {
+  color: #0F172A !important;
+}
+
+.legal-disclaimer-box p {
+  margin-bottom: 0.75rem !important;
+  font-size: 0.88rem !important;
+  line-height: 1.7 !important;
+}
+
+.legal-disclaimer-box p:last-child {
+  margin-bottom: 0 !important;
+}
+
+
 
