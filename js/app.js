@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initLeadModal();
   initMobileMenu();
   initBlog();
+  initToolDirectoryFilters();
 });
 
 // 1. Theme Management (Dark / Light)
@@ -940,3 +941,59 @@ function initMobileMenu() {
     });
   }
 }
+
+// 8. Tool Directory Category Filter & Live Search
+function initToolDirectoryFilters() {
+  const filterTabs = document.querySelectorAll('#tool-filter-tabs .tool-filter-btn');
+  const searchInput = document.getElementById('tool-search-input');
+  const sections = document.querySelectorAll('.tools-category-section');
+
+  if (filterTabs.length === 0 && !searchInput) return;
+
+  let currentCategory = 'all';
+
+  function applyFilter() {
+    const query = searchInput ? searchInput.value.toLowerCase().trim() : '';
+
+    sections.forEach(section => {
+      const sectionCategory = section.getAttribute('data-category');
+      const matchesCategory = (currentCategory === 'all' || currentCategory === sectionCategory);
+      
+      let sectionVisibleCount = 0;
+      const sectionCards = section.querySelectorAll('.tool-directory-card');
+
+      sectionCards.forEach(card => {
+        const text = (card.textContent || '').toLowerCase();
+        const keywords = (card.getAttribute('data-keywords') || '').toLowerCase();
+        const matchesSearch = !query || text.includes(query) || keywords.includes(query);
+
+        if (matchesCategory && matchesSearch) {
+          card.style.display = 'flex';
+          sectionVisibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      if (matchesCategory && sectionVisibleCount > 0) {
+        section.style.display = 'block';
+      } else {
+        section.style.display = 'none';
+      }
+    });
+  }
+
+  filterTabs.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterTabs.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentCategory = btn.getAttribute('data-filter') || 'all';
+      applyFilter();
+    });
+  });
+
+  if (searchInput) {
+    searchInput.addEventListener('input', applyFilter);
+  }
+}
+

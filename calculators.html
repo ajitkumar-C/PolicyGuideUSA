@@ -148,25 +148,35 @@
       <nav>
         <ul class="nav-links" id="nav-links">
           <li><a href="/" class="nav-link">Home</a></li>
-          <li><a href="/state-guide" class="nav-link">50-State Guides</a></li>
-          <li><a href="/city-guide" class="nav-link">Metro Guides</a></li>
-          <li><a href="/carrier-comparison" class="nav-link">Carrier Matchups</a></li>
           <li class="nav-dropdown">
-            <a href="/calculators" class="nav-link nav-dropdown-toggle active">Tools <span class="nav-dropdown-arrow">▼</span></a>
+            <a href="/calculators" class="nav-link nav-dropdown-toggle active">Calculators <span class="nav-dropdown-arrow">▼</span></a>
             <ul class="nav-dropdown-menu">
-              <li><a href="/calculator-auto">Auto Insurance Calculator</a></li>
-              <li><a href="/calculator-home">Home Insurance Calculator</a></li>
-              <li><a href="/calculator-renters">Renters Insurance Calculator</a></li>
-              <li><a href="/calculator-health">Health Insurance Calculator</a></li>
-              <li><a href="/calculator-life">Life Insurance Calculator</a></li>
-              <li><a href="/calculator-business">Business Insurance Calculator</a></li>
-              <li><a href="/calculator-travel">Travel Insurance Calculator</a></li>
-              <li><a href="/calculator-pet">Pet Insurance Calculator</a></li>
-              <li><a href="/calculator-rv">RV Insurance Calculator</a></li>
-              <li><a href="/calculator-boat">Boat Insurance Calculator</a></li>
+              <li class="nav-dropdown-header">Personal Insurance</li>
+              <li><a href="/calculator-auto">🚗 Auto Insurance Calculator</a></li>
+              <li><a href="/calculator-home">🏡 Home Insurance Calculator</a></li>
+              <li><a href="/calculator-renters">🏢 Renters Insurance Calculator</a></li>
+              <li><a href="/calculator-health">🩺 Health Insurance Calculator</a></li>
+              <li><a href="/calculator-life">🛡️ Life Insurance Calculator</a></li>
+              <li><a href="/calculator-pet">🐾 Pet Insurance Calculator</a></li>
+              <li><a href="/calculator-travel">✈️ Travel Insurance Calculator</a></li>
+              <li class="nav-dropdown-divider"></li>
+              <li class="nav-dropdown-header">Commercial & Specialty</li>
+              <li><a href="/calculator-business">💼 Business Insurance (BOP/CGL)</a></li>
+              <li><a href="/calculator-boat">⛵ Boat & Watercraft Calculator</a></li>
+              <li><a href="/calculator-rv">🚐 RV & Motorhome Calculator</a></li>
+              <li class="nav-dropdown-divider"></li>
+              <li class="nav-dropdown-header">Audit & Risk Engines</li>
+              <li><a href="/calculator-underinsured">⚖️ "Am I Underinsured?" Advisor</a></li>
+              <li><a href="/calculator-deductible">📈 Deductible Break-Even Simulator</a></li>
+              <li><a href="/calculator-discounts">💡 2-Minute Discount Quiz</a></li>
+              <li><a href="/calculator-vehicle-rate">🚘 Vehicle Rate Estimator</a></li>
+              <li><a href="/calculator-compliance-audit">📋 State Compliance Audit</a></li>
             </ul>
           </li>
-          <li><a href="/blog" class="nav-link">Articles</a></li>
+          <li><a href="/state-guide" class="nav-link">State Rates</a></li>
+          <li><a href="/city-guide" class="nav-link">City Rates</a></li>
+          <li><a href="/carrier-comparison" class="nav-link">Carriers</a></li>
+          <li><a href="/blog" class="nav-link">Guides</a></li>
         </ul>
       </nav>
 
@@ -180,42 +190,57 @@
     </div>
   </header>
 
-
   <!-- Hero -->
-  <section class="hero" style="padding: 3rem 0 2rem;">
+  <section class="hero" style="padding: 2.75rem 0 1.5rem; text-align: left;">
     <div class="container">
-      <div style="display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.75rem;">
-        <span class="badge badge-primary">Comprehensive Financial Toolkit</span>
+      <div style="display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.75rem; flex-wrap: wrap;">
+        <span class="badge badge-primary">Comprehensive Actuarial Suite</span>
         <span class="badge badge-success">15 Independent Tools</span>
       </div>
-      <h1 style="margin-top: 0.5rem; font-size: 2.5rem; font-weight: 800;">Insurance Calculators & Policy Tools Directory (2026)</h1>
-      <p style="font-size: 1.1rem; color: var(--color-text-muted); max-width: 820px; line-height: 1.6;">
-        Eliminate guesswork from your insurance decisions. Explore our independent actuarial calculators, deductible risk simulators, discount quizzes, and 50-state statutory compliance audit checklists.
+      <h1 style="font-size: clamp(2rem, 3.4vw, 2.75rem); font-weight: 800; line-height: 1.2; margin-bottom: 0.75rem; color: var(--color-text-main);">
+        Insurance Calculators & Policy Tools Directory (2026)
+      </h1>
+      <p style="font-size: 1.1rem; color: var(--color-text-muted); max-width: 840px; line-height: 1.6; margin-bottom: 1.5rem;">
+        Eliminate guesswork from your insurance decisions. Explore dedicated line-of-business actuarial models with live regional cost factors, deductible break-even simulators, and 50-state statutory compliance audit checklists.
       </p>
+
+      <!-- Interactive Quick Filter Tabs & Instant Search -->
+      <div class="tools-filter-wrapper">
+        <div class="tool-filter-tabs" id="tool-filter-tabs">
+          <button class="tool-filter-btn active" data-filter="all">All Calculators (15)</button>
+          <button class="tool-filter-btn" data-filter="personal">Personal Insurance (7)</button>
+          <button class="tool-filter-btn" data-filter="commercial">Commercial Insurance (1)</button>
+          <button class="tool-filter-btn" data-filter="specialty">Specialty Lines (2)</button>
+          <button class="tool-filter-btn" data-filter="audit">Audit & Risk Engines (5)</button>
+        </div>
+        <div class="tools-search-box">
+          <input type="text" id="tool-search-input" placeholder="Search calculator (e.g. auto, flood, life, business)..." aria-label="Search calculators">
+        </div>
+      </div>
     </div>
   </section>
 
-  <div class="container">
+  <div class="container" id="calculators-container">
 
     <!-- AdSense Leaderboard Slot -->
-    <div class="ad-slot-leaderboard" role="complementary" aria-label="Advertisement">
+    <div class="ad-slot-leaderboard" role="complementary" aria-label="Advertisement" style="margin-bottom: 2.5rem;">
       <span class="ad-label">ADVERTISEMENT</span>
       <div class="ad-placeholder-text">Google AdSense 728x90 Banner Slot</div>
     </div>
 
-    <!-- Section 1: Core Insurance Line Calculators -->
-    <section style="margin-bottom: 3.5rem;">
+    <!-- Category 1: Personal Insurance Calculators (Attachment 1 Core Grid) -->
+    <section class="tools-category-section" data-category="personal" style="margin-bottom: 3.5rem;">
       <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.25rem;">
         <div>
-          <h2 style="font-size: 1.75rem; font-weight: 800; margin-bottom: 0.25rem;">Insurance Line Calculators</h2>
+          <h2 style="font-size: 1.85rem; font-weight: 800; margin-bottom: 0.25rem; color: var(--color-text-main);">Personal Insurance Calculators</h2>
           <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 0;">Dedicated line-of-business actuarial models with live regional cost factors.</p>
         </div>
-        <span class="badge badge-primary">10 Coverage Types</span>
+        <span class="coverage-badge">7 Coverage Types</span>
       </div>
 
       <div class="tools-directory-grid">
         <!-- 1. Auto -->
-        <a href="/calculator-auto" class="tool-directory-card">
+        <a href="/calculator-auto" class="tool-directory-card" data-keywords="auto car vehicle driving insurance premium rate model sedan suv truck ev">
           <div>
             <div class="tool-card-icon">🚗</div>
             <h3 class="tool-card-title">Auto Insurance Calculator</h3>
@@ -225,7 +250,7 @@
         </a>
 
         <!-- 2. Home -->
-        <a href="/calculator-home" class="tool-directory-card">
+        <a href="/calculator-home" class="tool-directory-card" data-keywords="home homeowners dwelling replacement cost wind hail hurricane coastal flood risk">
           <div>
             <div class="tool-card-icon">🏡</div>
             <h3 class="tool-card-title">Home Insurance Calculator</h3>
@@ -235,7 +260,7 @@
         </a>
 
         <!-- 3. Renters -->
-        <a href="/calculator-renters" class="tool-directory-card">
+        <a href="/calculator-renters" class="tool-directory-card" data-keywords="renters tenant apartment personal property tenant liability shield loss of use living expense">
           <div>
             <div class="tool-card-icon">🏢</div>
             <h3 class="tool-card-title">Renters Insurance Calculator</h3>
@@ -245,7 +270,7 @@
         </a>
 
         <!-- 4. Health -->
-        <a href="/calculator-health" class="tool-directory-card">
+        <a href="/calculator-health" class="tool-directory-card" data-keywords="health medical aca obamacare bronze silver gold platinum premium subsidy deductible out of pocket maximum">
           <div>
             <div class="tool-card-icon">🩺</div>
             <h3 class="tool-card-title">Health Insurance Calculator</h3>
@@ -255,7 +280,7 @@
         </a>
 
         <!-- 5. Life -->
-        <a href="/calculator-life" class="tool-directory-card">
+        <a href="/calculator-life" class="tool-directory-card" data-keywords="life term whole income replacement household mortgage tuition face amount">
           <div>
             <div class="tool-card-icon">🛡️</div>
             <h3 class="tool-card-title">Life Insurance Calculator</h3>
@@ -264,28 +289,8 @@
           <div class="tool-card-cta">Launch Calculator &rarr;</div>
         </a>
 
-        <!-- 6. Business -->
-        <a href="/calculator-business" class="tool-directory-card">
-          <div>
-            <div class="tool-card-icon">💼</div>
-            <h3 class="tool-card-title">Business Insurance Calculator</h3>
-            <p class="tool-card-desc">Model Commercial General Liability (CGL), Business Owner's Policies (BOP), and professional cyber liability costs by industry class.</p>
-          </div>
-          <div class="tool-card-cta">Launch Calculator &rarr;</div>
-        </a>
-
-        <!-- 7. Travel -->
-        <a href="/calculator-travel" class="tool-directory-card">
-          <div>
-            <div class="tool-card-icon">✈️</div>
-            <h3 class="tool-card-title">Travel Insurance Calculator</h3>
-            <p class="tool-card-desc">Calculate trip cancellation, emergency medical evacuation, and baggage protection costs for domestic and overseas itineraries.</p>
-          </div>
-          <div class="tool-card-cta">Launch Calculator &rarr;</div>
-        </a>
-
-        <!-- 8. Pet -->
-        <a href="/calculator-pet" class="tool-directory-card">
+        <!-- 6. Pet -->
+        <a href="/calculator-pet" class="tool-directory-card" data-keywords="pet dog cat accident illness wellness veterinary breed risk reimbursement">
           <div>
             <div class="tool-card-icon">🐾</div>
             <h3 class="tool-card-title">Pet Insurance Calculator</h3>
@@ -294,18 +299,54 @@
           <div class="tool-card-cta">Launch Calculator &rarr;</div>
         </a>
 
-        <!-- 9. RV -->
-        <a href="/calculator-rv" class="tool-directory-card">
+        <!-- 7. Travel -->
+        <a href="/calculator-travel" class="tool-directory-card" data-keywords="travel trip cancellation flight medical evacuation baggage overseas domestic itineraries">
           <div>
-            <div class="tool-card-icon">🚐</div>
-            <h3 class="tool-card-title">RV Insurance Calculator</h3>
-            <p class="tool-card-desc">Estimate specialized motorhome and travel trailer coverage for Class A, B, C rigs, full-timer liability, and vacation campsite liability.</p>
+            <div class="tool-card-icon">✈️</div>
+            <h3 class="tool-card-title">Travel Insurance Calculator</h3>
+            <p class="tool-card-desc">Calculate trip cancellation, emergency medical evacuation, and baggage protection costs for domestic and overseas itineraries.</p>
           </div>
           <div class="tool-card-cta">Launch Calculator &rarr;</div>
         </a>
+      </div>
+    </section>
 
-        <!-- 10. Boat -->
-        <a href="/calculator-boat" class="tool-directory-card">
+    <!-- Category 2: Commercial & Business Insurance -->
+    <section class="tools-category-section" data-category="commercial" style="margin-bottom: 3.5rem;">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.25rem;">
+        <div>
+          <h2 style="font-size: 1.85rem; font-weight: 800; margin-bottom: 0.25rem; color: var(--color-text-main);">Commercial & Business Insurance</h2>
+          <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 0;">Actuarial models for small businesses, commercial liabilities, and enterprise risks.</p>
+        </div>
+        <span class="coverage-badge">Commercial Lines</span>
+      </div>
+
+      <div class="tools-directory-grid">
+        <!-- 8. Business -->
+        <a href="/calculator-business" class="tool-directory-card" data-keywords="business commercial bop cgl general liability cyber professional workers comp enterprise">
+          <div>
+            <div class="tool-card-icon">💼</div>
+            <h3 class="tool-card-title">Business Insurance Calculator</h3>
+            <p class="tool-card-desc">Model Commercial General Liability (CGL), Business Owner's Policies (BOP), and professional cyber liability costs by industry class.</p>
+          </div>
+          <div class="tool-card-cta">Launch Calculator &rarr;</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Category 3: Specialty & Recreational Line Insurance -->
+    <section class="tools-category-section" data-category="specialty" style="margin-bottom: 3.5rem;">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.25rem;">
+        <div>
+          <h2 style="font-size: 1.85rem; font-weight: 800; margin-bottom: 0.25rem; color: var(--color-text-main);">Specialty & Recreational Line Insurance</h2>
+          <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 0;">Tailored marine, motorhome, and recreational leisure vehicle risk benchmarks.</p>
+        </div>
+        <span class="coverage-badge">2 Specialty Lines</span>
+      </div>
+
+      <div class="tools-directory-grid">
+        <!-- 9. Boat -->
+        <a href="/calculator-boat" class="tool-directory-card" data-keywords="boat watercraft marine vessel salvage speedboat pontoon sailboat personal watercraft">
           <div>
             <div class="tool-card-icon">⛵</div>
             <h3 class="tool-card-title">Boat & Watercraft Calculator</h3>
@@ -313,104 +354,79 @@
           </div>
           <div class="tool-card-cta">Launch Calculator &rarr;</div>
         </a>
+
+        <!-- 10. RV -->
+        <a href="/calculator-rv" class="tool-directory-card" data-keywords="rv motorhome camper travel trailer class a b c full timer liability vacation campsite">
+          <div>
+            <div class="tool-card-icon">🚐</div>
+            <h3 class="tool-card-title">RV & Motorhome Calculator</h3>
+            <p class="tool-card-desc">Estimate specialized motorhome and travel trailer coverage for Class A, B, C rigs, full-timer liability, and vacation campsite liability.</p>
+          </div>
+          <div class="tool-card-cta">Launch Calculator &rarr;</div>
+        </a>
       </div>
     </section>
 
-    <!-- Section 2: Specialized Financial & Policy Audit Tools -->
-    <section style="margin-bottom: 4rem;">
+    <!-- Category 4: Specialized Risk, Rate & Policy Audit Engines -->
+    <section class="tools-category-section" data-category="audit" style="margin-bottom: 4rem;">
       <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.25rem;">
         <div>
-          <h2 style="font-size: 1.75rem; font-weight: 800; margin-bottom: 0.25rem;">Specialized Financial & Policy Audit Tools</h2>
+          <h2 style="font-size: 1.85rem; font-weight: 800; margin-bottom: 0.25rem; color: var(--color-text-main);">Specialized Risk & Policy Audit Engines</h2>
           <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 0;">Interactive decision engines to spot asset liabilities, simulate deductibles, and audit compliance.</p>
         </div>
-        <span class="badge badge-success">5 Advanced Utilities</span>
+        <span class="coverage-badge">5 Advanced Utilities</span>
       </div>
 
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
-        <!-- Tool 1: Underinsured Advisor -->
-        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; padding: 2rem; border-left: 4px solid #0284C7;">
+      <div class="tools-directory-grid">
+        <!-- 11. Underinsured Advisor -->
+        <a href="/calculator-underinsured" class="tool-directory-card" data-keywords="underinsured umbrella advisor net worth liability limit wage garnishment asset protection">
           <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-              <span class="badge badge-primary">Liability & Umbrella</span>
-              <span style="font-size: 1.5rem;">⚖️</span>
-            </div>
-            <h3 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 0.5rem; color: #FFFFFF;">"Am I Underinsured?" Coverage Limit & Umbrella Advisor</h3>
-            <p style="font-size: 0.92rem; color: var(--color-text-muted); line-height: 1.55; margin-bottom: 1.25rem;">
-              Most drivers carry statutory minimum limits unaware that an at-fault crash can trigger personal wage garnishment or property liens. Analyze your net worth, homeownership status, and vehicle count to pinpoint your safe threshold.
-            </p>
+            <div class="tool-card-icon">⚖️</div>
+            <h3 class="tool-card-title">"Am I Underinsured?" Coverage Advisor</h3>
+            <p class="tool-card-desc">Analyze your household net worth, property ownership, and vehicles to pinpoint your safe liability threshold and personal umbrella need.</p>
           </div>
-          <a href="/calculator-underinsured" class="btn btn-primary btn-block" style="text-align: center;">
-            Launch Coverage Advisor &rarr;
-          </a>
-        </div>
+          <div class="tool-card-cta">Launch Coverage Advisor &rarr;</div>
+        </a>
 
-        <!-- Tool 2: Deductible Simulator -->
-        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; padding: 2rem; border-left: 4px solid #10B981;">
+        <!-- 12. Deductible Simulator -->
+        <a href="/calculator-deductible" class="tool-directory-card" data-keywords="deductible savings break even simulator risk cash flow comprehensive collision out of pocket">
           <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-              <span class="badge badge-success">Risk & Cash Flow</span>
-              <span style="font-size: 1.5rem;">📈</span>
-            </div>
-            <h3 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 0.5rem; color: #FFFFFF;">Deductible Savings Break-Even Simulator</h3>
-            <p style="font-size: 0.92rem; color: var(--color-text-muted); line-height: 1.55; margin-bottom: 1.25rem;">
-              Raising your comprehensive and collision deductible from $250 or $500 to $1,000+ lowers monthly premiums. Calculate the exact number of claim-free months required for your premium savings to surpass out-of-pocket exposure.
-            </p>
+            <div class="tool-card-icon">📈</div>
+            <h3 class="tool-card-title">Deductible Break-Even Simulator</h3>
+            <p class="tool-card-desc">Calculate the exact number of claim-free months required for higher deductible premium savings to surpass out-of-pocket exposure.</p>
           </div>
-          <a href="/calculator-deductible" class="btn btn-primary btn-block" style="text-align: center;">
-            Launch Deductible Simulator &rarr;
-          </a>
-        </div>
+          <div class="tool-card-cta">Launch Deductible Simulator &rarr;</div>
+        </a>
 
-        <!-- Tool 3: Discount Matcher Quiz -->
-        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; padding: 2rem; border-left: 4px solid #F59E0B;">
+        <!-- 13. Discount Quiz -->
+        <a href="/calculator-discounts" class="tool-directory-card" data-keywords="discount matcher quiz savings bundle multi car paperless telematics student gpa anti theft sensor">
           <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-              <span class="badge badge-warning">Interactive Quiz</span>
-              <span style="font-size: 1.5rem;">💡</span>
-            </div>
-            <h3 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 0.5rem; color: #FFFFFF;">The 2-Minute Discount Matcher Quiz</h3>
-            <p style="font-size: 0.92rem; color: var(--color-text-muted); line-height: 1.55; margin-bottom: 1.25rem;">
-              Carriers rarely apply all eligible discounts automatically. Select all categories matching your lifestyle—including multi-policy bundling, defensive driving, student GPA, anti-theft, and smart water shut-off—to uncover up to 42% in hidden savings.
-            </p>
+            <div class="tool-card-icon">💡</div>
+            <h3 class="tool-card-title">The 2-Minute Discount Matcher Quiz</h3>
+            <p class="tool-card-desc">Carriers rarely apply all eligible discounts automatically. Select your lifestyle profile to uncover up to 42% in hidden policy savings.</p>
           </div>
-          <a href="/calculator-discounts" class="btn btn-primary btn-block" style="text-align: center;">
-            Launch Discount Quiz &rarr;
-          </a>
-        </div>
+          <div class="tool-card-cta">Launch Discount Quiz &rarr;</div>
+        </a>
 
-        <!-- Tool 4: Vehicle & Age Estimator -->
-        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; padding: 2rem; border-left: 4px solid #8B5CF6;">
+        <!-- 14. Vehicle Rate Estimator -->
+        <a href="/calculator-vehicle-rate" class="tool-directory-card" data-keywords="vehicle rate driver age sedans suvs trucks evs luxury actuarial benchmark cohort age">
           <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-              <span class="badge badge-primary">Actuarial Benchmark</span>
-              <span style="font-size: 1.5rem;">🚘</span>
-            </div>
-            <h3 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 0.5rem; color: #FFFFFF;">Vehicle Type & Driver Age Rate Estimator</h3>
-            <p style="font-size: 0.92rem; color: var(--color-text-muted); line-height: 1.55; margin-bottom: 1.25rem;">
-              Compare benchmark auto insurance costs across sedans, SUVs, trucks, EVs, and luxury vehicles across four age tiers and driving record histories. See how top carriers like GEICO, Progressive, and State Farm price your cohort.
-            </p>
+            <div class="tool-card-icon">🚘</div>
+            <h3 class="tool-card-title">Vehicle & Driver Age Rate Estimator</h3>
+            <p class="tool-card-desc">Compare benchmark auto insurance costs across sedans, SUVs, trucks, EVs, and luxury vehicles across four age tiers and driving records.</p>
           </div>
-          <a href="/calculator-vehicle-rate" class="btn btn-primary btn-block" style="text-align: center;">
-            Launch Rate Estimator &rarr;
-          </a>
-        </div>
+          <div class="tool-card-cta">Launch Rate Estimator &rarr;</div>
+        </a>
 
-        <!-- Tool 5: Compliance Audit Checklist -->
-        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; padding: 2rem; border-left: 4px solid #EC4899;">
+        <!-- 15. Compliance Audit -->
+        <a href="/calculator-compliance-audit" class="tool-directory-card" data-keywords="state compliance audit checklist statutory florida roof wildfire california 30/60/15 minimums">
           <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-              <span class="badge badge-success">State Regulatory Audit</span>
-              <span style="font-size: 1.5rem;">📋</span>
-            </div>
-            <h3 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 0.5rem; color: #FFFFFF;">State Compliance & Annual Policy Audit Checklist</h3>
-            <p style="font-size: 0.92rem; color: var(--color-text-muted); line-height: 1.55; margin-bottom: 1.25rem;">
-              Audit your policies against landmark state insurance statutory updates: Florida hurricane roof replacement cost rules, California wildfire defensible space and 30/60/15 minimum limits, and national personal liability standards. Generates printable audit reports.
-            </p>
+            <div class="tool-card-icon">📋</div>
+            <h3 class="tool-card-title">State Compliance & Policy Audit</h3>
+            <p class="tool-card-desc">Audit your policies against landmark state insurance statutory updates (Florida hurricane roof rules, California wildfire & 30/60/15 limits).</p>
           </div>
-          <a href="/calculator-compliance-audit" class="btn btn-primary btn-block" style="text-align: center;">
-            Launch Policy Audit &rarr;
-          </a>
-        </div>
+          <div class="tool-card-cta">Launch Policy Audit &rarr;</div>
+        </a>
       </div>
     </section>
 
@@ -478,14 +494,36 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h5>Company & Legal</h5>
+          <ul class="footer-links">
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/disclaimer">Legal Disclaimer</a></li>
+            <li><a href="/privacy">Privacy Policy</a></li>
+            <li><a href="/terms">Terms of Use</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/editorial-standards">Editorial Standards</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="disclaimer-box">
+        <strong>Advertising & Editorial Disclosure:</strong> PolicyGuide US is an independent, advertising-supported comparison service. 
+        We may receive compensation when you click on links, complete quote requests, or call numbers displayed on this website. 
+        This compensation may impact where and in what order carrier offers appear. All editorial ratings, reviews, and analyses are conducted independently 
+        using public rate filings and consumer market data. Review our full <a href="/disclaimer" style="color: var(--color-primary); font-weight: 700; text-decoration: underline;">Legal Disclaimer</a>.
+      </div>
+
       <div class="footer-bottom">
         <div>&copy; 2026 PolicyGuide USA. America's Independent Insurance Authority.</div>
         <div>
           <a href="/about">About Us</a> | 
-          <a href="/editorial-standards">Editorial Standards</a> | 
+          <a href="/disclaimer">Disclaimer</a> | 
           <a href="/privacy">Privacy Policy</a> | 
           <a href="/terms">Terms of Use</a> | 
-          <a href="/contact">Contact Us</a>
+          <a href="/contact">Contact Us</a> | 
+          <a href="/editorial-standards">Editorial Standards</a>
         </div>
       </div>
     </div>

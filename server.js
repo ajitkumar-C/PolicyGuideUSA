@@ -32,10 +32,15 @@ const server = http.createServer((req, res) => {
   if (safePath === '/' || safePath === '\\') safePath = '/index.html';
 
   const filePath = path.join(BASE_DIR, safePath);
-  const ext = path.extname(filePath).toLowerCase();
+  let targetFile = filePath;
+  if (!fs.existsSync(targetFile) && fs.existsSync(targetFile + '.html')) {
+    targetFile = targetFile + '.html';
+  }
+
+  const ext = path.extname(targetFile).toLowerCase();
   const contentType = MIME_TYPES[ext] || 'application/octet-stream';
 
-  fs.readFile(filePath, (err, content) => {
+  fs.readFile(targetFile, (err, content) => {
     if (err) {
       if (err.code === 'ENOENT') {
         res.writeHead(404, { 'Content-Type': 'text/html; charset=utf-8' });

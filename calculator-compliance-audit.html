@@ -115,7 +115,9 @@
 
 
   <!-- Standalone Tool Shell -->
-  <main class="calc-standalone-container">
+  <main class="container">
+    <div class="calc-workspace-layout">
+      <div class="calc-main-column">
     <div class="calc-card-shell" id="audit-checklists">
       <!-- Hidden print header that only shows when printed -->
       <div class="print-audit-header">
@@ -173,6 +175,106 @@
         </div>
       </div>
     </div>
+  
+      </div>
+      <!-- Right Column: Top Related Guides & Tools Sidebar -->
+      <aside class="calc-sidebar-column">
+        <!-- Related Guides Card -->
+        <div class="calc-sidebar-card">
+          <div class="calc-sidebar-card-title">
+            <span>📖</span> State Compliance & Legal Guides
+          </div>
+          <div class="calc-sidebar-card-subtitle">
+            Top 5 statutory insurance regulations & mandates
+          </div>
+          <div class="calc-related-posts-list">
+            <a href="/guide-california-fair-plan-home-insurance" class="calc-related-post-item">
+              <div class="calc-related-post-badge-row">
+                <span class="calc-related-post-badge">California</span>
+                <span class="calc-related-post-time">8 min read</span>
+              </div>
+              <div class="calc-related-post-title">California 30/60/15 Rising Minimums & FAIR Plan Realities</div>
+              <div class="calc-related-post-snippet">New statutory minimum limits and managing property coverage in high-risk wildfire zones.</div>
+              <span class="calc-related-post-arrow">Read Full Guide &rarr;</span>
+            </a>
+            <a href="/guide-florida-citizens-property-insurance-depopulation" class="calc-related-post-item">
+              <div class="calc-related-post-badge-row">
+                <span class="calc-related-post-badge">Florida</span>
+                <span class="calc-related-post-time">8 min read</span>
+              </div>
+              <div class="calc-related-post-title">Florida Citizens Depopulation & Flood Mandates</div>
+              <div class="calc-related-post-snippet">Understanding the 20% take-out offer rule and mandatory flood insurance requirements.</div>
+              <span class="calc-related-post-arrow">Read Full Guide &rarr;</span>
+            </a>
+            <a href="/guide-penalties-for-driving-without-insurance" class="calc-related-post-item">
+              <div class="calc-related-post-badge-row">
+                <span class="calc-related-post-badge">Statutory Penalties</span>
+                <span class="calc-related-post-time">7 min read</span>
+              </div>
+              <div class="calc-related-post-title">Penalties for Driving Uninsured by State</div>
+              <div class="calc-related-post-snippet">License suspensions, electronic DMV insurance verification, and impound fees across 50 states.</div>
+              <span class="calc-related-post-arrow">Read Full Guide &rarr;</span>
+            </a>
+            <a href="/guide-sr22-insurance-filing-costs" class="calc-related-post-item">
+              <div class="calc-related-post-badge-row">
+                <span class="calc-related-post-badge">SR-22 Mandates</span>
+                <span class="calc-related-post-time">7 min read</span>
+              </div>
+              <div class="calc-related-post-title">SR-22 Filing Costs, Mandates & License Reinstatement</div>
+              <div class="calc-related-post-snippet">State certificate of financial responsibility rules after DUIs or major moving violations.</div>
+              <span class="calc-related-post-arrow">Read Full Guide &rarr;</span>
+            </a>
+            <a href="/guide-car-makers-selling-driving-data" class="calc-related-post-item">
+              <div class="calc-related-post-badge-row">
+                <span class="calc-related-post-badge">Data Privacy</span>
+                <span class="calc-related-post-time">7 min read</span>
+              </div>
+              <div class="calc-related-post-title">Automakers Selling Connected Car Data to Insurers</div>
+              <div class="calc-related-post-snippet">LexisNexis and Verisk telematics reports: how to opt out of vehicle surveillance tracking.</div>
+              <span class="calc-related-post-arrow">Read Full Guide &rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Rate Comparison CTA -->
+        <div class="calc-sidebar-cta">
+          <h4>Compare Verified 2026 Rates</h4>
+          <p>Get instant benchmark quotes from top-rated insurers in your zip code.</p>
+          <button class="btn btn-primary open-quote-modal" style="width: 100%; font-weight: 700; padding: 0.75rem 1rem;">
+            Compare Local Quotes &rarr;
+          </button>
+        </div>
+
+        <!-- Complementary Tools Switcher -->
+        <div class="calc-sidebar-card">
+          <div class="calc-sidebar-card-title">
+            <span>⚙️</span> Complementary Calculators
+          </div>
+          <div class="calc-sidebar-tools-grid">
+            <a href="/calculator-underinsured" class="calc-sidebar-tool-link">
+              <span>⚖️ Underinsured Advisor</span>
+              <span>&rarr;</span>
+            </a>
+            <a href="/calculator-auto" class="calc-sidebar-tool-link">
+              <span>🚗 Auto Insurance Calculator</span>
+              <span>&rarr;</span>
+            </a>
+            <a href="/calculator-home" class="calc-sidebar-tool-link">
+              <span>🏡 Home Insurance Calculator</span>
+              <span>&rarr;</span>
+            </a>
+            <a href="/calculator-deductible" class="calc-sidebar-tool-link">
+              <span>📈 Deductible Simulator</span>
+              <span>&rarr;</span>
+            </a>
+            <a href="/calculators" class="calc-sidebar-tool-link" style="color: var(--color-primary); font-weight: 700;">
+              <span>🧮 View All 15 Calculators</span>
+              <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </aside>
+    </div>
   </main>
 
   <!-- Quote Modal -->
@@ -202,17 +304,21 @@
     </div>
   </div>
 
-  <!-- Footer -->
+    <!-- Footer -->
   <footer class="footer">
     <div class="container">
+      <div class="disclaimer-box" style="margin-bottom: 1.5rem; font-size: 0.78rem; line-height: 1.55; color: #94A3B8; background: rgba(15, 23, 42, 0.65); padding: 1.15rem; border-radius: var(--radius-sm); border: 1px solid rgba(255, 255, 255, 0.1);">
+        <strong>Advertising & Editorial Disclosure:</strong> PolicyGuide US is an independent, advertising-supported comparison service. Rates and quotes are estimates based on public filings and proprietary actuarial algorithms. Review our full <a href="/disclaimer" style="color: var(--color-primary); font-weight: 700; text-decoration: underline;">Legal Disclaimer</a>.
+      </div>
       <div class="footer-bottom">
-        <div>&copy; 2026 PolicyGuide USA. America's Independent Insurance Authority.</div>
+        <div>&copy; 2026 PolicyGuide USA. America's Independent Insurance Authority. All rights reserved.</div>
         <div>
           <a href="/about">About Us</a> | 
-          <a href="/editorial-standards">Editorial Standards</a> | 
+          <a href="/disclaimer">Disclaimer</a> | 
           <a href="/privacy">Privacy Policy</a> | 
           <a href="/terms">Terms of Use</a> | 
-          <a href="/contact">Contact Us</a>
+          <a href="/contact">Contact Us</a> | 
+          <a href="/editorial-standards">Editorial Standards</a>
         </div>
       </div>
     </div>

@@ -115,7 +115,9 @@
 
 
   <!-- Standalone Tool Shell -->
-  <main class="calc-standalone-container">
+  <main class="container">
+    <div class="calc-workspace-layout">
+      <div class="calc-main-column">
     <div class="calc-card-shell">
       <div class="calc-card-header">
         <div style="display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.75rem;">
@@ -214,6 +216,106 @@
         </div>
       </div>
     </div>
+  
+      </div>
+      <!-- Right Column: Top Related Guides & Tools Sidebar -->
+      <aside class="calc-sidebar-column">
+        <!-- Related Guides Card -->
+        <div class="calc-sidebar-card">
+          <div class="calc-sidebar-card-title">
+            <span>📖</span> Discount & Savings Guides
+          </div>
+          <div class="calc-sidebar-card-subtitle">
+            Top 5 insurance discount and rate reduction guides
+          </div>
+          <div class="calc-related-posts-list">
+            <a href="/guide-how-to-lower-car-insurance" class="calc-related-post-item">
+              <div class="calc-related-post-badge-row">
+                <span class="calc-related-post-badge">12 Tactics</span>
+                <span class="calc-related-post-time">6 min read</span>
+              </div>
+              <div class="calc-related-post-title">How to Lower Car Insurance: 12 Proven Tactics</div>
+              <div class="calc-related-post-snippet">Proven strategies to claim paperless, upfront payment, occupation, and affinity group savings.</div>
+              <span class="calc-related-post-arrow">Read Full Guide &rarr;</span>
+            </a>
+            <a href="/guide-home-and-auto-insurance-bundle" class="calc-related-post-item">
+              <div class="calc-related-post-badge-row">
+                <span class="calc-related-post-badge">Bundling Hack</span>
+                <span class="calc-related-post-time">5 min read</span>
+              </div>
+              <div class="calc-related-post-title">Home & Auto Bundling: Maximizing Multi-Policy Discounts</div>
+              <div class="calc-related-post-snippet">How packaging policies unlocks up to 25% off across both lines with single-deductible perks.</div>
+              <span class="calc-related-post-arrow">Read Full Guide &rarr;</span>
+            </a>
+            <a href="/guide-telematics-usage-based-insurance" class="calc-related-post-item">
+              <div class="calc-related-post-badge-row">
+                <span class="calc-related-post-badge">Telematics</span>
+                <span class="calc-related-post-time">7 min read</span>
+              </div>
+              <div class="calc-related-post-title">Telematics & Snapshot: Save Up to 30% Safely</div>
+              <div class="calc-related-post-snippet">Drive Safe & Save, Snapshot, and DriveEasy: what behaviors trigger the largest renewal credits.</div>
+              <span class="calc-related-post-arrow">Read Full Guide &rarr;</span>
+            </a>
+            <a href="/guide-credit-score-car-insurance-impact" class="calc-related-post-item">
+              <div class="calc-related-post-badge-row">
+                <span class="calc-related-post-badge">Credit Score</span>
+                <span class="calc-related-post-time">6 min read</span>
+              </div>
+              <div class="calc-related-post-title">How Your Credit Score Impacts Rates and What to Do</div>
+              <div class="calc-related-post-snippet">How improving your credit tier can lower insurance premiums by up to $800 annually.</div>
+              <span class="calc-related-post-arrow">Read Full Guide &rarr;</span>
+            </a>
+            <a href="/guide-cheap-car-insurance-for-teens" class="calc-related-post-item">
+              <div class="calc-related-post-badge-row">
+                <span class="calc-related-post-badge">Student / Teen</span>
+                <span class="calc-related-post-time">6 min read</span>
+              </div>
+              <div class="calc-related-post-title">Discounts for Teen & Student Drivers</div>
+              <div class="calc-related-post-snippet">Good student GPA discounts, student-away-at-school rules, and driver training credits.</div>
+              <span class="calc-related-post-arrow">Read Full Guide &rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Rate Comparison CTA -->
+        <div class="calc-sidebar-cta">
+          <h4>Compare Verified 2026 Rates</h4>
+          <p>Get instant benchmark quotes from top-rated insurers in your zip code.</p>
+          <button class="btn btn-primary open-quote-modal" style="width: 100%; font-weight: 700; padding: 0.75rem 1rem;">
+            Compare Local Quotes &rarr;
+          </button>
+        </div>
+
+        <!-- Complementary Tools Switcher -->
+        <div class="calc-sidebar-card">
+          <div class="calc-sidebar-card-title">
+            <span>⚙️</span> Complementary Calculators
+          </div>
+          <div class="calc-sidebar-tools-grid">
+            <a href="/calculator-auto" class="calc-sidebar-tool-link">
+              <span>🚗 Auto Insurance Calculator</span>
+              <span>&rarr;</span>
+            </a>
+            <a href="/calculator-deductible" class="calc-sidebar-tool-link">
+              <span>📈 Deductible Simulator</span>
+              <span>&rarr;</span>
+            </a>
+            <a href="/calculator-underinsured" class="calc-sidebar-tool-link">
+              <span>⚖️ Underinsured Advisor</span>
+              <span>&rarr;</span>
+            </a>
+            <a href="/calculator-home" class="calc-sidebar-tool-link">
+              <span>🏡 Home Insurance Calculator</span>
+              <span>&rarr;</span>
+            </a>
+            <a href="/calculators" class="calc-sidebar-tool-link" style="color: var(--color-primary); font-weight: 700;">
+              <span>🧮 View All 15 Calculators</span>
+              <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </aside>
+    </div>
   </main>
 
   <!-- Quote Modal -->
@@ -243,17 +345,21 @@
     </div>
   </div>
 
-  <!-- Footer -->
+    <!-- Footer -->
   <footer class="footer">
     <div class="container">
+      <div class="disclaimer-box" style="margin-bottom: 1.5rem; font-size: 0.78rem; line-height: 1.55; color: #94A3B8; background: rgba(15, 23, 42, 0.65); padding: 1.15rem; border-radius: var(--radius-sm); border: 1px solid rgba(255, 255, 255, 0.1);">
+        <strong>Advertising & Editorial Disclosure:</strong> PolicyGuide US is an independent, advertising-supported comparison service. Rates and quotes are estimates based on public filings and proprietary actuarial algorithms. Review our full <a href="/disclaimer" style="color: var(--color-primary); font-weight: 700; text-decoration: underline;">Legal Disclaimer</a>.
+      </div>
       <div class="footer-bottom">
-        <div>&copy; 2026 PolicyGuide USA. America's Independent Insurance Authority.</div>
+        <div>&copy; 2026 PolicyGuide USA. America's Independent Insurance Authority. All rights reserved.</div>
         <div>
           <a href="/about">About Us</a> | 
-          <a href="/editorial-standards">Editorial Standards</a> | 
+          <a href="/disclaimer">Disclaimer</a> | 
           <a href="/privacy">Privacy Policy</a> | 
           <a href="/terms">Terms of Use</a> | 
-          <a href="/contact">Contact Us</a>
+          <a href="/contact">Contact Us</a> | 
+          <a href="/editorial-standards">Editorial Standards</a>
         </div>
       </div>
     </div>
