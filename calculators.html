@@ -191,30 +191,32 @@
   </header>
 
   <!-- Hero -->
-  <section class="hero" style="padding: 2.75rem 0 1.5rem; text-align: left;">
+  <section class="hero hero-compact" style="text-align: left; padding: 1rem 0 0.4rem;">
     <div class="container">
-      <div style="display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.75rem; flex-wrap: wrap;">
-        <span class="badge badge-primary">Comprehensive Actuarial Suite</span>
-        <span class="badge badge-success">15 Independent Tools</span>
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 0.25rem;">
+        <div style="display: flex; align-items: center; gap: 0.65rem; flex-wrap: wrap;">
+          <h1 style="font-size: clamp(1.35rem, 2.2vw, 1.75rem); font-weight: 800; line-height: 1.2; margin: 0; color: var(--color-text-main);">
+            Insurance Calculators &amp; Policy Tools
+          </h1>
+          <span class="badge badge-primary" style="font-size: 0.72rem; padding: 0.15rem 0.5rem;">15 Tools</span>
+          <span class="badge badge-success" style="font-size: 0.72rem; padding: 0.15rem 0.5rem;">2026 Edition</span>
+        </div>
       </div>
-      <h1 style="font-size: clamp(2rem, 3.4vw, 2.75rem); font-weight: 800; line-height: 1.2; margin-bottom: 0.75rem; color: var(--color-text-main);">
-        Insurance Calculators & Policy Tools Directory (2026)
-      </h1>
-      <p style="font-size: 1.1rem; color: var(--color-text-muted); max-width: 840px; line-height: 1.6; margin-bottom: 1.5rem;">
-        Eliminate guesswork from your insurance decisions. Explore dedicated line-of-business actuarial models with live regional cost factors, deductible break-even simulators, and 50-state statutory compliance audit checklists.
+      <p style="font-size: 0.88rem; color: var(--color-text-muted); max-width: 880px; line-height: 1.4; margin: 0.2rem 0 0.65rem;">
+        Eliminate guesswork with dedicated actuarial models, regional cost factors, deductible simulators, and 50-state statutory compliance audit checklists.
       </p>
 
       <!-- Interactive Quick Filter Tabs & Instant Search -->
-      <div class="tools-filter-wrapper">
+      <div class="tools-filter-wrapper" style="margin: 0.4rem 0 0.85rem; padding: 0.5rem 0.85rem;">
         <div class="tool-filter-tabs" id="tool-filter-tabs">
-          <button class="tool-filter-btn active" data-filter="all">All Calculators (15)</button>
-          <button class="tool-filter-btn" data-filter="personal">Personal Insurance (7)</button>
-          <button class="tool-filter-btn" data-filter="commercial">Commercial Insurance (1)</button>
-          <button class="tool-filter-btn" data-filter="specialty">Specialty Lines (2)</button>
-          <button class="tool-filter-btn" data-filter="audit">Audit & Risk Engines (5)</button>
+          <button class="tool-filter-btn active" data-filter="all">All (15)</button>
+          <button class="tool-filter-btn" data-filter="personal">Personal (7)</button>
+          <button class="tool-filter-btn" data-filter="commercial">Commercial (1)</button>
+          <button class="tool-filter-btn" data-filter="specialty">Specialty (2)</button>
+          <button class="tool-filter-btn" data-filter="audit">Audit &amp; Risk (5)</button>
         </div>
-        <div class="tools-search-box">
-          <input type="text" id="tool-search-input" placeholder="Search calculator (e.g. auto, flood, life, business)..." aria-label="Search calculators">
+        <div class="tools-search-box" style="max-width: 320px;">
+          <input type="text" id="tool-search-input" placeholder="Search calculators (auto, flood, life)..." aria-label="Search calculators" style="padding: 0.35rem 0.85rem; font-size: 0.82rem;">
         </div>
       </div>
     </div>
@@ -222,18 +224,12 @@
 
   <div class="container" id="calculators-container">
 
-    <!-- AdSense Leaderboard Slot -->
-    <div class="ad-slot-leaderboard" role="complementary" aria-label="Advertisement" style="margin-bottom: 2.5rem;">
-      <span class="ad-label">ADVERTISEMENT</span>
-      <div class="ad-placeholder-text">Google AdSense 728x90 Banner Slot</div>
-    </div>
-
     <!-- Category 1: Personal Insurance Calculators (Attachment 1 Core Grid) -->
-    <section class="tools-category-section" data-category="personal" style="margin-bottom: 3.5rem;">
-      <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.25rem;">
+    <section class="tools-category-section" data-category="personal" style="margin-bottom: 2.5rem;">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.85rem;">
         <div>
-          <h2 style="font-size: 1.85rem; font-weight: 800; margin-bottom: 0.25rem; color: var(--color-text-main);">Personal Insurance Calculators</h2>
-          <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 0;">Dedicated line-of-business actuarial models with live regional cost factors.</p>
+          <h2 style="font-size: 1.45rem; font-weight: 800; margin-bottom: 0.15rem; color: var(--color-text-main);">Personal Insurance Calculators</h2>
+          <p style="color: var(--color-text-muted); font-size: 0.88rem; margin-bottom: 0;">Dedicated line-of-business actuarial models with live regional cost factors.</p>
         </div>
         <span class="coverage-badge">7 Coverage Types</span>
       </div>
@@ -310,6 +306,12 @@
         </a>
       </div>
     </section>
+
+    <!-- AdSense Leaderboard Slot -->
+    <div class="ad-slot-leaderboard" role="complementary" aria-label="Advertisement" style="margin-bottom: 2.5rem;">
+      <span class="ad-label">ADVERTISEMENT</span>
+      <div class="ad-placeholder-text">Google AdSense 728x90 Banner Slot</div>
+    </div>
 
     <!-- Category 2: Commercial & Business Insurance -->
     <section class="tools-category-section" data-category="commercial" style="margin-bottom: 3.5rem;">

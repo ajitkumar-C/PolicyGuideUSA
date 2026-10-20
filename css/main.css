@@ -652,6 +652,41 @@ p {
   font-size: 1.05rem;
 }
 
+/* Compact Hero for Hub & Directory Pages */
+.hero.hero-compact {
+  padding: 1.25rem 0 0.65rem;
+}
+.hero.hero-compact .badge {
+  font-size: 0.72rem;
+  padding: 0.2rem 0.55rem;
+  letter-spacing: 0.03em;
+}
+.hero.hero-compact h1 {
+  font-size: clamp(1.4rem, 2.3vw, 1.85rem);
+  margin: 0.35rem auto 0.35rem;
+  line-height: 1.25;
+}
+.hero.hero-compact p {
+  font-size: 0.92rem;
+  max-width: 780px;
+  margin: 0 auto 0.75rem;
+  line-height: 1.45;
+  color: var(--color-text-muted);
+}
+@media (max-width: 768px) {
+  .hero.hero-compact {
+    padding: 1rem 0 0.5rem;
+  }
+  .hero.hero-compact h1 {
+    font-size: 1.35rem;
+  }
+  .hero.hero-compact p {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+
 /* Hero Zip Code Finder Box */
 .zip-box-card {
   max-width: 640px;
@@ -1309,18 +1344,18 @@ p {
 /* Blog & Knowledge Hub Styles */
 .blog-filter-bar {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.4rem;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
+  margin-bottom: 1.15rem;
   justify-content: center;
 }
 .blog-filter-btn {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   color: var(--color-text-muted);
-  padding: 0.45rem 1.1rem;
+  padding: 0.35rem 0.85rem;
   border-radius: var(--radius-full);
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 600;
   cursor: pointer;
   transition: all var(--transition-fast);
@@ -2356,9 +2391,9 @@ p {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin: 1.5rem 0 2rem;
-  padding: 1rem 1.25rem;
+  gap: 0.75rem;
+  margin: 0.65rem 0 1.25rem;
+  padding: 0.6rem 0.95rem;
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
@@ -2371,14 +2406,14 @@ p {
 
 .tool-filter-tabs {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.4rem;
   flex-wrap: wrap;
 }
 
 .tool-filter-btn {
-  padding: 0.5rem 1rem;
+  padding: 0.35rem 0.8rem;
   border-radius: 9999px;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 700;
   border: 1px solid var(--color-border);
   background: transparent;
@@ -2401,14 +2436,14 @@ p {
 
 .tools-search-box {
   flex-grow: 1;
-  max-width: 380px;
-  min-width: 240px;
+  max-width: 340px;
+  min-width: 220px;
 }
 
 .tools-search-box input {
   width: 100%;
-  padding: 0.55rem 1.15rem;
-  font-size: 0.88rem;
+  padding: 0.42rem 1rem;
+  font-size: 0.84rem;
   border-radius: 9999px;
   border: 1px solid var(--color-border);
   background: var(--color-bg);

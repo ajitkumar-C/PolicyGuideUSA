@@ -107,20 +107,20 @@
     .matchup-selector-box {
       background: var(--color-surface-card);
       border: 1px solid var(--color-border);
-      border-radius: var(--radius-lg);
-      padding: 2rem;
-      box-shadow: var(--shadow-md);
-      margin-bottom: 2.5rem;
+      border-radius: var(--radius-md);
+      padding: 0.9rem 1.25rem;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 1.25rem;
     }
     .matchup-grid {
       display: grid;
       grid-template-columns: 1fr auto 1fr;
-      gap: 1.5rem;
+      gap: 1rem;
       align-items: center;
     }
     .vs-circle {
-      width: 48px;
-      height: 48px;
+      width: 36px;
+      height: 36px;
       background: var(--color-primary);
       color: #FFF;
       border-radius: var(--radius-full);
@@ -128,7 +128,7 @@
       align-items: center;
       justify-content: center;
       font-weight: 800;
-      font-size: 1.1rem;
+      font-size: 0.85rem;
       box-shadow: var(--shadow-glow);
     }
     .comparison-table-wrapper {
@@ -274,13 +274,14 @@
   </header>
 
   <!-- Hero -->
-  <section class="hero" style="padding: 3rem 0 2rem;">
+  <section class="hero hero-compact" style="padding: 1rem 0 0.5rem;">
     <div class="container">
-      <span class="badge badge-primary">Head-to-Head Showdowns</span>
-      <h1 style="margin-top: 0.75rem;">Direct Carrier vs. Carrier Comparisons</h1>
-      <p>
-        Our direct carrier vs. carrier comparisons evaluate America's largest insurance companies head-to-head. 
-        Compare rates, telematics app rules, bundling discounts, and customer claim satisfaction before switching.
+      <div style="display: flex; align-items: center; justify-content: center; gap: 0.65rem; flex-wrap: wrap; margin-bottom: 0.25rem;">
+        <h1 style="font-size: clamp(1.35rem, 2.2vw, 1.75rem); font-weight: 800; margin: 0;">Direct Carrier vs. Carrier Comparisons</h1>
+        <span class="badge badge-primary" style="font-size: 0.72rem; padding: 0.15rem 0.5rem;">Head-to-Head</span>
+      </div>
+      <p style="font-size: 0.88rem; max-width: 780px; margin: 0.2rem auto 0.65rem; line-height: 1.4; color: var(--color-text-muted);">
+        Compare America's largest insurance companies head-to-head on premiums, telematics discounts, bundling, and claim satisfaction.
       </p>
     </div>
   </section>
@@ -288,20 +289,20 @@
   <div class="container">
     <!-- Interactive Matchup Selector -->
     <div class="matchup-selector-box">
-      <h3 style="margin-bottom: 1.25rem; text-align: center;">Select Two Insurers to Compare Side-by-Side:</h3>
+      <h3 style="margin-bottom: 0.65rem; font-size: 1rem; font-weight: 700; text-align: center;">Select Two Insurers to Compare Side-by-Side:</h3>
       <div class="matchup-grid">
-        <div class="form-group">
-          <label for="carrier-select-1">First Carrier:</label>
-          <select id="carrier-select-1" class="form-control" style="font-size: 1.1rem; font-weight: 700;">
+        <div class="form-group" style="margin-bottom: 0;">
+          <label for="carrier-select-1" style="font-size: 0.82rem; margin-bottom: 0.25rem; display: block;">First Carrier:</label>
+          <select id="carrier-select-1" class="form-control" style="font-size: 0.95rem; font-weight: 700; padding: 0.45rem 0.75rem;">
             <!-- Options populated dynamically -->
           </select>
         </div>
 
         <div class="vs-circle">VS</div>
 
-        <div class="form-group">
-          <label for="carrier-select-2">Second Carrier:</label>
-          <select id="carrier-select-2" class="form-control" style="font-size: 1.1rem; font-weight: 700;">
+        <div class="form-group" style="margin-bottom: 0;">
+          <label for="carrier-select-2" style="font-size: 0.82rem; margin-bottom: 0.25rem; display: block;">Second Carrier:</label>
+          <select id="carrier-select-2" class="form-control" style="font-size: 0.95rem; font-weight: 700; padding: 0.45rem 0.75rem;">
             <!-- Options populated dynamically -->
           </select>
         </div>
