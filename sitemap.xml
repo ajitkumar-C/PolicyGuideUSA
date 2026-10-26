@@ -35,6 +35,14 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- P&C Insurance Hierarchy & Terminology Knowledge Hub -->
+  <url>
+    <loc>https://policyguideusa.com/insurance-terms</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- 2026 Carrier In-Depth Audits & Reviews -->
   <url>
     <loc>https://policyguideusa.com/carrier-progressive-insurance-review</loc>
